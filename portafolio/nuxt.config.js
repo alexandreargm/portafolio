@@ -1,6 +1,11 @@
 
 export default {
-  mode: 'universal',
+  mode: 'spa',
+  /*
+  router: {
+    base: '/portfolio/'
+  },
+  */
   /*
   ** Headers of the page
   */
@@ -18,7 +23,7 @@ export default {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  loading: { color: '#0ff' },
   /*
   ** Global CSS
   */
