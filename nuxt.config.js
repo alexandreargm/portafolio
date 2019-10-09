@@ -1,8 +1,8 @@
 export default {
   mode: 'spa',
-  router: {
+  /*router: {
     base: '/portafolio/'
-  },
+  },*/
   /*
   ** Headers of the page
   */
