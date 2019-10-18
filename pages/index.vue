@@ -1,56 +1,53 @@
 <template>
-  <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        portafolio
-      </h1>
-      <h2 class="subtitle">
-        Página personal creada con Nuxt.js
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+  <div class="container" data-theme="default">
+    <header>
+      <navbar />
+    </header>
+    <main>
+      <div class="hero">
+        <div class="text--h2">
+          Hola, me llamo
+        </div>
+        <div class="text--title">
+          Alexandre Argibay M.
+        </div>
+        <div class="text--title text--color-contrast-medium">
+          Desarrollo aplicaciones web.
+        </div>
+        <div class="text--m">
+          Soy un Desarrollador Web con estancia en Torrevieja, Alicante que crea aplicaciones web atractivas, modernas, y con una experiencia de usuario excelente.
+        </div>
       </div>
-    </div>
+    </main>
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import Navbar from '~/components/Navbar.vue'
 
 export default {
   components: {
-    Logo
+    Navbar
   }
 }
 </script>
 
 <style>
-/* Sample `apply` at-rules with Tailwind CSS
 .container {
-  @apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
-*/
-.container {
-  margin: 0 auto;
+  display: block;
   min-height: 100vh;
+}
+
+header {
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
   align-items: center;
-  text-align: center;
+}
+
+.main {
+  width: 1080px;
 }
 
 .title {

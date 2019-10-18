@@ -1,0 +1,119 @@
+
+/*
+  VARIABLES
+*/
+
+:root, [data-theme="default"] {
+
+  /* COLOURS */
+  --color-primary: #FFBD08;
+  /* contrast colours */
+  --color-bg: #00186E;
+  --color-contrast-low: #CBA028;
+  --color-contrast-medium: #95A2D3;
+  --color-contrast-high: #F0F0F0;
+
+  /* TEXT SIZES */
+  --text-s: 1.2rem; /* 12px */
+  --text-m: 1.8rem;
+  --text-l: 2rem;
+  --text-h2: 2.4rem;
+  --text-h1: 3.6rem;
+  --text-title: 6rem;
+
+  /* FONT FAMILIES */
+  --font-header: "Jost", "Helvetica", Arial, sans-serif;
+  --font-body: "Roboto", "Open Sans", Arial, sans-serif;
+
+
+  /* SIZES */
+  --header-height: 10rem; /* 100px */
+  --header-height-fixed: 7rem; /* 70px*/
+}
+
+[data-theme] {
+  background-color: var(--color-bg);
+  color: var(--color-contrast-medium);
+}
+
+/*[data-theme="dark"] {
+
+}*/
+
+
+/*
+  STYLE RESETS
+*/
+
+html {
+  font-family: var(--font-body);
+  font-size: 10px; /* 1rem = 10px; 1.6rem = 16px */
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+
+/*
+  TEXT STYLES
+*/
+
+/* TEXT BASE STYLES*/
+.text--s {
+  font-size: var(--text-s);
+  font-family: var(--font-body);
+  color: var(--color-contrast-medium);
+}
+.text--m {
+  font-size: var(--text-m);
+  font-family: var(--font-body);
+  color: var(--color-contrast-medium);
+}
+.text--l {
+  font-size: var(--text-l);
+  font-family: var(---font-body);
+  color: var(--color-contrast-medium);
+}
+.text--h2 {
+  font-size: var(--text-h2);
+  font-family: var(--font-header);
+  font-weight: 900;
+  color: var(--color-contrast-high);
+}
+.text--h1 {
+  font-size: var(--text-h1);
+  font-family: var(--font-header);
+  font-weight: 900;
+  color: var(--color-contrast-high);
+}
+.text--title {
+  font-size: var(--text-title);
+  font-family: var(--font-header);
+  font-weight: 900;
+  color: var(--color-contrast-high);
+}
+
+/* TEXT COLOUR MODIFIERS */
+.text--color-primary { color: var(--color-primary) !important; }
+.text--color-bg { color: var(--color-bg) !important; }
+.text--color-contrast-low { color: var(--color-contrast-low) !important; }
+.text--color-contrast-medium { color: var(--color-contrast-medium) !important; }
+.text--color-contrast-high { color: var(--color-contrast-high) !important; }
+
+
+/*
+  COMMON COMPONENTS
+*/
+
+/* BUTTONS */
+.btn {
+  text-decoration: none;
+}
