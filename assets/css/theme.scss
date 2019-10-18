@@ -1,8 +1,8 @@
+/* 
 
-/*
-  VARIABLES
+REMOVE AFTER DEV
+
 */
-
 :root, [data-theme="default"] {
 
   /* COLOURS */
@@ -30,6 +30,9 @@
   --header-height: 10rem; /* 100px */
   --header-height-fixed: 7rem; /* 70px*/
 }
+/*
+  DINAMIC THEME
+*/
 
 [data-theme] {
   background-color: var(--color-bg);

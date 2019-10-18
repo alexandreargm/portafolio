@@ -1,0 +1,27 @@
+:root, [data-theme="default"] {
+
+    /* COLOURS */
+    --color-primary: #FFBD08;
+    /* contrast colours */
+    --color-bg: #00186E;
+    --color-contrast-low: #CBA028;
+    --color-contrast-medium: #95A2D3;
+    --color-contrast-high: #F0F0F0;
+  
+    /* TEXT SIZES */
+    --text-s: 1.2rem; /* 12px */
+    --text-m: 1.8rem;
+    --text-l: 2rem;
+    --text-h2: 2.4rem;
+    --text-h1: 3.6rem;
+    --text-title: 6rem;
+  
+    /* FONT FAMILIES */
+    --font-header: "Jost", "Helvetica", Arial, sans-serif;
+    --font-body: "Roboto", "Open Sans", Arial, sans-serif;
+  
+  
+    /* SIZES */
+    --header-height: 10rem; /* 100px */
+    --header-height-fixed: 7rem; /* 70px*/
+  }
