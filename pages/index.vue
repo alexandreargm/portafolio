@@ -1,10 +1,11 @@
+<!-- index.vue -->
 <template>
-  <div class="container" data-theme="default">
-    <header>
+  <div class="siteframe" data-theme="default">
+    <header class="siteframe__header">
       <navbar />
     </header>
-    <main>
-      <div class="hero">
+    <main class="siteframe__main">
+      <div class="main__hero container">
         <div class="text--h2">
           Hola, me llamo
         </div>
@@ -32,43 +33,24 @@ export default {
 }
 </script>
 
-<style>
-.container {
-  display: block;
-  min-height: 100vh;
-}
+<style lang="scss">
+/* index.vue */
 
-header {
+.siteframe {
+  align-items: stretch;
   display: flex;
-  -webkit-box-pack: justify;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+.siteframe__header {
+  display: flex;
   justify-content: space-between;
-  -webkit-box-align: center;
   align-items: center;
+  background-color: var(--color-bg);
+  z-index: 10;
 }
 
-.main {
-  width: 1080px;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
 </style>

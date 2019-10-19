@@ -1,12 +1,10 @@
 <template>
-  <div>
-    <nuxt />
-  </div>
+  <nuxt />
 </template>
 
 <style>
-/* Importa los estilos básicos de la web */
 @import '../assets/css/variables.css';
+@import '../assets/css/reboot.css';
 @import '../assets/css/theme.scss';
 
 </style>

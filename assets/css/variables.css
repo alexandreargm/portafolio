@@ -1,27 +1,56 @@
+/* variables.css */
+
 :root, [data-theme="default"] {
 
-    /* COLOURS */
-    --color-primary: #FFBD08;
-    /* contrast colours */
-    --color-bg: #00186E;
-    --color-contrast-low: #CBA028;
-    --color-contrast-medium: #95A2D3;
-    --color-contrast-high: #F0F0F0;
+  /* 
+      COLOURS
+  */
+
+  --color-primary: #FFBD08;
+  /* contrast colours */
+  --color-bg: #00186E;
+  --color-contrast-low: #CBA028;
+  --color-contrast-medium: #95A2D3;
+  --color-contrast-high: #F0F0F0;
+
+
+  /*
+      FONTS
+  */
+
+  /* FONT FAMILIES */
+  --font-header: "Jost", "Helvetica", Arial, sans-serif;
+  --font-body: "Roboto", "Open Sans", Arial, sans-serif;
+
+  /* FONT SIZES */
+  --font-size-s: 1.2rem; /* 12px */
+  --font-size-m: 1.8rem;
+  --font-size-l: 2rem;
+  --font-size-h2: 2.4rem;
+  --font-size-h1: 3.6rem;
+  --font-size-title: 6rem;
+
+  /* 
+      COMPONENT SIZES
+  */
+
+  /* MAIN COMPONENTS */
+
+  /* Container */
+  --container-max-width: 120em;
+  --container-padding: 1.6em;
+
+  /* Navbar */
+  --nav-height: 10em; /* 100px */
+  --nav-height-fixed: 7em;
+  --nav-max-width: 120em;
+
+
+
+  /* COMMON COMPONENTS */
   
-    /* TEXT SIZES */
-    --text-s: 1.2rem; /* 12px */
-    --text-m: 1.8rem;
-    --text-l: 2rem;
-    --text-h2: 2.4rem;
-    --text-h1: 3.6rem;
-    --text-title: 6rem;
-  
-    /* FONT FAMILIES */
-    --font-header: "Jost", "Helvetica", Arial, sans-serif;
-    --font-body: "Roboto", "Open Sans", Arial, sans-serif;
-  
-  
-    /* SIZES */
-    --header-height: 10rem; /* 100px */
-    --header-height-fixed: 7rem; /* 70px*/
-  }
+  /* Buttons */
+  --button-radius: 0.5em;
+  --button-border: 0.2em solid var(--color-primary);
+
+}

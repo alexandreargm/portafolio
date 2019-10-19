@@ -1,39 +1,7 @@
-/* 
-
-REMOVE AFTER DEV
-
-*/
-:root, [data-theme="default"] {
-
-  /* COLOURS */
-  --color-primary: #FFBD08;
-  /* contrast colours */
-  --color-bg: #00186E;
-  --color-contrast-low: #CBA028;
-  --color-contrast-medium: #95A2D3;
-  --color-contrast-high: #F0F0F0;
-
-  /* TEXT SIZES */
-  --text-s: 1.2rem; /* 12px */
-  --text-m: 1.8rem;
-  --text-l: 2rem;
-  --text-h2: 2.4rem;
-  --text-h1: 3.6rem;
-  --text-title: 6rem;
-
-  /* FONT FAMILIES */
-  --font-header: "Jost", "Helvetica", Arial, sans-serif;
-  --font-body: "Roboto", "Open Sans", Arial, sans-serif;
-
-
-  /* SIZES */
-  --header-height: 10rem; /* 100px */
-  --header-height-fixed: 7rem; /* 70px*/
-}
+/* theme.scss */
 /*
   DINAMIC THEME
 */
-
 [data-theme] {
   background-color: var(--color-bg);
   color: var(--color-contrast-medium);
@@ -43,62 +11,40 @@ REMOVE AFTER DEV
 
 }*/
 
-
-/*
-  STYLE RESETS
-*/
-
-html {
-  font-family: var(--font-body);
-  font-size: 10px; /* 1rem = 10px; 1.6rem = 16px */
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-
 /*
   TEXT STYLES
 */
 
 /* TEXT BASE STYLES*/
 .text--s {
-  font-size: var(--text-s);
+  font-size: var(--font-size-s);
   font-family: var(--font-body);
   color: var(--color-contrast-medium);
 }
 .text--m {
-  font-size: var(--text-m);
+  font-size: var(--font-size-m);
   font-family: var(--font-body);
   color: var(--color-contrast-medium);
 }
 .text--l {
-  font-size: var(--text-l);
+  font-size: var(--font-size-l);
   font-family: var(---font-body);
   color: var(--color-contrast-medium);
 }
 .text--h2 {
-  font-size: var(--text-h2);
+  font-size: var(--font-size-h2);
   font-family: var(--font-header);
   font-weight: 900;
   color: var(--color-contrast-high);
 }
 .text--h1 {
-  font-size: var(--text-h1);
+  font-size: var(--font-size-h1);
   font-family: var(--font-header);
   font-weight: 900;
   color: var(--color-contrast-high);
 }
 .text--title {
-  font-size: var(--text-title);
+  font-size: var(--font-size-title);
   font-family: var(--font-header);
   font-weight: 900;
   color: var(--color-contrast-high);
@@ -115,6 +61,13 @@ html {
 /*
   COMMON COMPONENTS
 */
+
+.container {
+  width: 100%;
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
 
 /* BUTTONS */
 .btn {
