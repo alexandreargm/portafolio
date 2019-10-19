@@ -41,9 +41,9 @@
   --container-padding: 1.6em;
 
   /* Navbar */
-  --nav-height: 10em; /* 100px */
-  --nav-height-fixed: 7em;
-  --nav-max-width: 120em;
+  --navbar-height: 10em; /* 100px */
+  --navbar-height-fixed: 7em;
+  --navbar-max-width: 120em;
 
 
 
