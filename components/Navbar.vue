@@ -10,7 +10,7 @@
             <polygon class="logo__path" points="1.7 127.5 48.5 127.5 59.1 106.6 30.1 71.6 1.7 127.5" />
             <polygon class="logo__path" points="66.4 0 38 55.9 112.7 55.9 66.4 0" />
             <polygon class="logo__path" points="40.8 67 64.5 95.8 79.1 67 40.8 67" />
-            <polygon class="logo__path-dark" points="89.3 71.6 72.3 105.1 90.8 127.5 135.6 127.5 89.3 71.6" />
+            <polygon class="logo__path-alt" points="89.3 71.6 72.3 105.1 90.8 127.5 135.6 127.5 89.3 71.6" />
           </svg>
         </a>
       </li>
@@ -24,7 +24,7 @@
         <a href="#" class="navbar__menu-link text--m">Contacto</a>
       </li>
       <li class="navbar___menu-item">
-        <a href="#" role="button" class="navbar___button navbar__menu-link button text--m text--color-primary">
+        <a href="<%- VALUE %>" role="button" class="navbar___button navbar__menu-link button text--m text--color-primary">
           Descargar CV
         </a>
       </li>
@@ -67,7 +67,7 @@
   &__path {
     fill: var(--color-primary);
   }
-  &__path-dark {
+  &__path-alt {
     fill: var(--color-contrast-low);
   }
 }
