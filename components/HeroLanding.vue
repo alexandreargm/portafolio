@@ -9,7 +9,7 @@
         Alexandre Argibay M.
       </h1>
       <h2 class="herolanding__role text--title text--color-contrast-medium">
-        Desarrollo aplicaciones web.
+        Desarrollador de aplicaciones web.
       </h2>
       <p class="herolanding__description text--l">
         Soy un Desarrollador Web con estancia en Torrevieja, Alicante que crea aplicaciones web atractivas, modernas, y con una experiencia de usuario excelente.

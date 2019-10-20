@@ -61,7 +61,7 @@
     width: auto;
   }
   &__path {
-    fill: var(--color-contrast-medium);
+    fill: var(--color-primary);
   }
 }
 .navbar___menu:nth-child(2) {
