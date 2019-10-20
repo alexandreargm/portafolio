@@ -18,11 +18,11 @@
   */
 
   /* FONT FAMILIES */
-  --font-header: "HK Grotesk", "Helvetica", Arial, sans-serif;
+  --font-header: "Public Sans", "Helvetica", Arial, sans-serif;
   --font-body: "Roboto", Arial, sans-serif;
 
   /* FONT WEIGHTS */
-  --font-weight-header: 900;
+  --font-weight-header: 700;
   --font-weight-body: 400;
 
   /* FONT SIZES */
