@@ -19,13 +19,18 @@
   */
 
   /* FONT FAMILIES */
-  --font-header: "Jost", "Helvetica", Arial, sans-serif;
+  --font-header: "Public Sans", "Helvetica", Arial, sans-serif;
   --font-body: "Roboto", "Open Sans", Arial, sans-serif;
+
+  /* FONT WEIGHTS */
+  --font-weight-header: 800;
+  --font-weight-body: 400;
 
   /* FONT SIZES */
   --font-size-s: 1.2rem; /* 12px */
-  --font-size-m: 1.8rem;
-  --font-size-l: 2rem;
+  --font-size-m: 1.6rem;
+  --font-size-l: 1.8rem;
+  --font-size-xl: 2rem;
   --font-size-h2: 2.4rem;
   --font-size-h1: 3.6rem;
   --font-size-title: 6rem;

@@ -6,17 +6,17 @@
         <a class="logo" href="#">Logo</a>
       </li>
       <li class="navbar___menu-item">
-        <a href="#" class="text--m">Sobre mi</a>
+        <a href="#" class="navbar__menu-link text--m">Sobre mi</a>
       </li>
       <li class="navbar___menu-item">
-        <a href="#" class="text--m">Experiencia</a>
+        <a href="#" class="navbar__menu-link text--m">Experiencia</a>
       </li>
       <li class="navbar___menu-item">
-        <a href="#" class="text--m">Contacto</a>
+        <a href="#" class="navbar__menu-link text--m">Contacto</a>
       </li>
       <li class="navbar___menu-item">
-        <a href="#" class="navbar___button button" role="button">
-          <span class="text--m text--color-primary">
+        <a href="#" role="button" class="navbar___button navbar__menu-link button">
+          <span class="navbar__menu-link text--m text--color-primary">
             Descargar CV
           </span>
         </a>
@@ -42,7 +42,7 @@
 
 .navbar___menu {
   margin: inherit;
-  height: 4em;
+  height: 4rem;
   list-style: none;
   display: flex;
   align-items: center;
@@ -52,7 +52,7 @@
 }
 .navbar___menu-item {
   flex: 0 0 auto;
-  margin-left: 5em;
+  margin-left: 5rem;
 }
 .navbar___menu-item:first-of-type {
   margin: 0 !important;
@@ -60,6 +60,8 @@
 .navbar___logo {
   flex: 1 100%;
   margin-right: auto;
+}
+.navbar__menu-link {
 }
 .navbar___button {
 }
