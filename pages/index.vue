@@ -35,7 +35,6 @@ export default {
   min-height: 100vh;
   position: relative;
 }
-
 .siteframe__header {
   display: flex;
   justify-content: space-between;
@@ -43,5 +42,10 @@ export default {
   background-color: var(--color-bg);
   z-index: 10;
 }
-
+.siteframe__main {
+  margin-top: var(--navbar-height);
+}
+.main__herolanding {
+  min-height: calc(100vh - var(--navbar-height));
+}
 </style>

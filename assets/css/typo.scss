@@ -1,0 +1,42 @@
+/* typo.scss */
+/* HK Grotesk */
+@font-face {
+  font-family: "HK Grotesk";
+  src:  url("~assets/fonts/hkgrotesk/HKGrotesk-Black.woff") format("woff"),
+        url("~assets/fonts/hkgrotesk/HKGrotesk-Black.woff") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "HK Grotesk";
+  src:  url("~assets/fonts/hkgrotesk/HKGrotesk-ExtraBold.woff") format("woff"),
+        url("~assets/fonts/hkgrotesk/HKGrotesk-ExtraBold.woff") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "HK Grotesk";
+  src:  url("~assets/fonts/hkgrotesk/HKGrotesk-Bold.woff") format("woff"),
+        url("~assets/fonts/hkgrotesk/HKGrotesk-Bold.woff") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+/* Roboto */
+/* roboto-regular - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'),
+       url('../fonts/roboto/roboto-v20-latin-regular.woff2') format('woff2'), 
+       url('../fonts/roboto/roboto-v20-latin-regular.woff') format('woff');
+}
+/* roboto-500 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'),
+       url('../fonts/roboto/roboto-v20-latin-500.woff2') format('woff2'),
+       url('../fonts/roboto/roboto-v20-latin-500.woff') format('woff');
+}
