@@ -24,7 +24,7 @@
         <a href="#" class="navbar__menu-link text--m">Contacto</a>
       </li>
       <li class="navbar___menu-item">
-        <a href="<%- VALUE %>" role="button" class="navbar___button navbar__menu-link button text--m text--color-primary">
+        <a href="/" role="button" class="navbar___button navbar__menu-link button text--m text--color-primary">
           Descargar CV
         </a>
       </li>
