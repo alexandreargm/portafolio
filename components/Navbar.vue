@@ -4,13 +4,11 @@
     <ul class="navbar___menu container">
       <li class="navbar___logo">
         <a class="logo" href="/">
-          <svg role="img" class="logo__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.7 128.8">
-            <title>Logo</title>
-            <!-- <path class="logo__path" d="M92.4,69.3h30.3L65.3,0,30.2,69.3,0,128.8H57L67.1,109l16.4,19.8h58.2ZM66.7,12.6l41.2,49.7H41.5ZM52.8,121.9H11.3L36.6,72.1l25.7,31.1ZM65.7,96.4,43.2,69.3H79.4Zm4.8,5.9L85.8,72.1,127,121.9H86.7Z" />-->
-            <polygon class="logo__path" points="1.7 127.5 48.5 127.5 59.1 106.6 30.1 71.6 1.7 127.5" />
-            <polygon class="logo__path" points="66.4 0 38 55.9 112.7 55.9 66.4 0" />
-            <polygon class="logo__path" points="40.8 67 64.5 95.8 79.1 67 40.8 67" />
-            <polygon class="logo__path-alt" points="89.3 71.6 72.3 105.1 90.8 127.5 135.6 127.5 89.3 71.6" />
+          <svg role="img" class="logo__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 91.4 85.1">
+            <polygon class="logo__path" points="17.8 49.4 39.5 75.4 34.7 85 0 85 17.8 49.4" />
+            <polygon class="logo__path" points="72.1 35.5 24.8 35.5 42.5 0 72.1 35.5" />
+            <polygon class="logo__path" points="55.9 42.5 43 68.5 42.9 68.6 35.8 59.9 21.3 42.5 55.9 42.5" />
+            <polygon class="logo__path logo__path--alt-color" points="90.1 85 56.7 85 47.8 74.4 53.3 63.4 54.3 61.5 58.5 53.2 60.4 49.4 60.4 49.4 90.1 85" />
           </svg>
         </a>
       </li>
@@ -67,7 +65,7 @@
   &__path {
     fill: var(--color-primary);
   }
-  &__path-alt {
+  &__path--alt-color {
     fill: var(--color-contrast-low);
   }
 }

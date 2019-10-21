@@ -6,13 +6,13 @@
         Hola, me llamo
       </div>
       <h1 class="herolanding__name text--title">
-        Alexandre Argibay M.
+        Alexandre Argibay.
       </h1>
       <h2 class="herolanding__role text--title text--color-contrast-medium">
-        Desarrollador Web Fullstack.
+        Desarrollo aplicaciones web.
       </h2>
       <p class="herolanding__description text--l">
-        Soy un Desarrollador Web con estancia en Torrevieja, Alicante que crea aplicaciones web atractivas, modernas, y con una experiencia de usuario excelente.
+        Soy un Desarrollador Web con estancia en Torrevieja, Alicante que crea aplicaciones web modernas, atractivas, y con una experiencia de usuario excelente.
       </p>
       <a href="#" role="button" class="herolanding__call-to-action button button--big text--l text--color-primary">
         Contactar
