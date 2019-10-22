@@ -1,12 +1,10 @@
 export default {
   mode: 'spa',
-  /*router: {
-    base: '/portafolio/'
-  },*/
   /*
   ** Headers of the page
   */
   head: {
+    titleTemplate: 'Portafolio',
     // Set html lang atribute
     htmlAttrs: {
       lang: 'es',
@@ -15,7 +13,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { hid: 'description', name: 'description', content: 'Alexandre Argibay es un desarrollador web con estancia en Torrevieja, Alicante especializado en la creación de aplicaciones web intuitivas con personalidad e integrados en back-ends modernos y eficientes' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
