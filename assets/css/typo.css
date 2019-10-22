@@ -1,6 +1,7 @@
 /* typo.scss */
 /* HK Grotesk */
 @font-face {
+  font-display: swap;
   font-family: "Public Sans";
   src:  url("~assets/fonts/publicsans/PublicSans-Bold.woff") format("woff"),
         url("~assets/fonts/publicsans/PublicSans-Bold.woff") format("woff2");
@@ -10,6 +11,7 @@
 /* Roboto */
 /* roboto-regular - latin */
 @font-face {
+  font-display: fallback;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -19,6 +21,7 @@
 }
 /* roboto-500 - latin */
 @font-face {
+  font-display: fallback;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
