@@ -31,8 +31,8 @@ export default {
   align-items: stretch;
   display: flex;
   flex-direction: column;
-  height: 100%;
   min-height: 100vh;
+  height: 100%;
   position: relative;
 }
 .siteframe__header {

@@ -1,79 +1,25 @@
 <template>
-  <div class="VueToNuxtLogo">
-    <div class="Triangle Triangle--two" />
-    <div class="Triangle Triangle--one" />
-    <div class="Triangle Triangle--three" />
-    <div class="Triangle Triangle--four" />
-  </div>
+  <a class="logo" href="/">
+    <svg role="img" class="logo__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 91.4 85.1">
+      <polygon class="logo__path" points="17.8 49.4 39.5 75.4 34.7 85 0 85 17.8 49.4" />
+      <polygon class="logo__path" points="72.1 35.5 24.8 35.5 42.5 0 72.1 35.5" />
+      <polygon class="logo__path" points="55.9 42.5 43 68.5 42.9 68.6 35.8 59.9 21.3 42.5 55.9 42.5" />
+      <polygon class="logo__path logo__path--alt-color" points="90.1 85 56.7 85 47.8 74.4 53.3 63.4 54.3 61.5 58.5 53.2 60.4 49.4 60.4 49.4 90.1 85" />
+    </svg>
+  </a>
 </template>
 
-<style>
-.VueToNuxtLogo {
-  display: inline-block;
-  animation: turn 2s linear forwards 1s;
-  transform: rotateX(180deg);
-  position: relative;
-  overflow: hidden;
-  height: 180px;
-  width: 245px;
-}
-
-.Triangle {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 0;
-}
-
-.Triangle--one {
-  border-left: 105px solid transparent;
-  border-right: 105px solid transparent;
-  border-bottom: 180px solid #41b883;
-}
-
-.Triangle--two {
-  top: 30px;
-  left: 35px;
-  animation: goright 0.5s linear forwards 3.5s;
-  border-left: 87.5px solid transparent;
-  border-right: 87.5px solid transparent;
-  border-bottom: 150px solid #3b8070;
-}
-
-.Triangle--three {
-  top: 60px;
-  left: 35px;
-  animation: goright 0.5s linear forwards 3.5s;
-  border-left: 70px solid transparent;
-  border-right: 70px solid transparent;
-  border-bottom: 120px solid #35495e;
-}
-
-.Triangle--four {
-  top: 120px;
-  left: 70px;
-  animation: godown 0.5s linear forwards 3s;
-  border-left: 35px solid transparent;
-  border-right: 35px solid transparent;
-  border-bottom: 60px solid #fff;
-}
-
-@keyframes turn {
-  100% {
-    transform: rotateX(0deg);
+<style lang="scss">
+.logo {
+  &__svg {
+    height: 5rem;
+    width: auto;
   }
-}
-
-@keyframes godown {
-  100% {
-    top: 180px;
+  &__path {
+    fill: var(--color-primary);
   }
-}
-
-@keyframes goright {
-  100% {
-    left: 70px;
+  &__path--alt-color {
+    fill: var(--color-contrast-low);
   }
 }
 </style>
