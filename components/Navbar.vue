@@ -1,21 +1,19 @@
 <!-- Navbar.vue -->
 <template>
-  <nav class="navbar">
-    <ul class="navbar___menu container">
-      <li class="navbar___logo">
-        <Logo />
-      </li>
-      <li class="navbar___menu-item">
+  <nav class="navbar container">
+    <Logo class="navbar__logo" />
+    <ul class="navbar__menu">
+      <li class="navbar__menu-link">
         <a href="#" class="navbar__menu-link text--m">Sobre mi</a>
       </li>
-      <li class="navbar___menu-item">
+      <li class="navbar__menu-link">
         <a href="#" class="navbar__menu-link text--m">Experiencia</a>
       </li>
-      <li class="navbar___menu-item">
+      <li class="navbar__menu-link">
         <a href="#" class="navbar__menu-link text--m">Contacto</a>
       </li>
-      <li class="navbar___menu-item">
-        <a href="/cv.pdf" download="CV Alexandre Argibay.pdf" class="navbar___button navbar__menu-link button text--m text--color-primary">
+      <li class="navbar__menu-link">
+        <a href="/cv.pdf" download="CV Alexandre Argibay.pdf" class="navbar__button navbar__menu-link button text--m text--color-primary">
           Descargar CV
         </a>
       </li>
@@ -48,32 +46,37 @@ export default {
   background-color: var(--color-bg);
 }
 
-.navbar___menu {
+.navbar__menu {
   margin: inherit;
+  padding: 0;
   height: 4rem;
   list-style: none;
-  display: flex;
   align-items: center;
+  display: none;
+
+  @media screen and (min-width: 48em /* 768px */) {
+    display: flex;
+  }
 }
-.navbar___logo {
+.navbar__logo {
   flex: 0 0 auto;
   width: auto;
   margin-right: auto;
 }
-.navbar___menu:nth-child(2) {
+.navbar__menu:nth-child(2) {
   margin: 0;
 }
-.navbar___menu-item {
+.navbar__menu-link {
   flex: 0 0 auto;
   margin-left: 5rem;
 }
-.navbar___menu-item:first-of-type {
+.navbar__menu-link:first-of-type {
   margin: 0 !important;
 }
 .navbar__menu-link {
   font-weight: 500;
 }
-.navbar___button {
+.navbar__button {
   font-weight: 400;
 }
 </style>

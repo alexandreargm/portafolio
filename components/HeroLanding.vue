@@ -28,17 +28,17 @@
   align-items: center;
 }
 .herolanding__hello {
-  margin-bottom: 2rem;
+  margin-bottom: 1.2rem;
 }
 .herolanding__name {
-  margin: 0;
+  margin-bottom: 0;
 }
 .herolanding__role {
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
 }
 .herolanding__description {
   max-width: 26em;
-  margin-bottom: 4rem;
+  margin-bottom: 8rem;
 }
 
 </style>

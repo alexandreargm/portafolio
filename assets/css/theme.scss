@@ -1,6 +1,6 @@
 /* theme.scss */
 html {
-  font-size: 62.5%;
+  font-size: 10px;
   font-family: var(--font-body);
   line-height: 1.4;
   -ms-text-size-adjust: 100%;
@@ -116,7 +116,7 @@ html {
 }
 
 /* Container indents */
-.container-indent-1 { padding-left: calc(12em + var(--container-padding)); }
-.container-indent-2 { padding-left: calc(24em + var(--container-padding)); }
-.container-indent-3 { padding-left: calc(36em + var(--container-padding)); }
-.container-indent-4 { padding-left: calc(48em + var(--container-padding)); }
+.container-indent-1 { padding-left: calc(12rem + var(--container-padding)); }
+.container-indent-2 { padding-left: calc(24rem + var(--container-padding)); }
+.container-indent-3 { padding-left: calc(36rem + var(--container-padding)); }
+.container-indent-4 { padding-left: calc(48rem + var(--container-padding)); }

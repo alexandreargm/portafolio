@@ -1,6 +1,8 @@
+html {
+  font-size: 10px;
+}
 /* variables.css */
-:root, [data-theme="default"] {
-
+:root, [data-theme] {
   /* 
       COLOURS
   */
@@ -24,18 +26,18 @@
   --font-weight-body: 400;
 
   /* FONT SIZES */
-  --font-size-s: 1.2rem; /* 12px */
-  --font-size-m: 1.6rem;
-  --font-size-l: 1.8rem;
-  --font-size-xl: 2rem;
-  --font-size-h2: 2.4rem;
-  --font-size-h1: 3.6rem;
-  --font-size-title: 6rem;
+  --font-size-s: 1rem; /* 12px */
+  --font-size-m: 1.4rem;
+  --font-size-l: 1.6rem;
+  --font-size-h2: 1.8rem;
+  --font-size-h1: 2rem;
+  --font-size-title: 3rem;
 
 
   /*
     BREAKPOINTS
   */
+  --mobile-portrait: 374px;
   --mobile-landscape: 48rem;
   --tablet-portrait: 76.8rem;
   --tablet-landscape: 99.2rem;
@@ -59,5 +61,59 @@
   /* Buttons */
   --button-radius: 0.5em;
   --button-border: 0.2em solid var(--color-primary);
+
+}
+
+/*  
+  MEDIA QUERIES  
+*/
+/*
+mobile-portrait:  374px = 23.4em
+mobile-landscape: 480px = 30em
+tablet-portrait:  768px = 48em
+tablet-landscape: 992px = 62em
+laptop:           1200px = 75em
+*/
+
+
+/*  MOBILE-PORTRAIT 374px  */
+@media (min-width: 23.4em ) {
+  :root, [data-theme]  {
+    /* FONT SIZES */
+  --font-size-s: 1.2rem; /* 12px */
+  --font-size-m: 1.6rem;
+  --font-size-l: 1.8rem;
+  --font-size-h2: 2rem;
+  --font-size-h1: 2.4rem;
+  --font-size-title: 3.7rem;
+
+  
+  /* 
+    COMPONENT SIZES
+  */
+  /* MAIN COMPONENTS */
+  /* Container */
+  --container-padding: 1.6rem;
+  }
+
+}
+
+/*  MOBILE-LANDSCAPE 480px  */
+@media (min-width: 30em) {
+
+}
+
+/*  TABLET-PORTRAIT 768px  */
+@media (min-width: 48em) {
+
+}
+
+/*  TABLET-LANDSCAPE 992px  */
+@media (min-width: 62em) {
+
+}
+
+/*  LAPTOP 1200px  */
+@media (min-width: 75em) {
 
 }

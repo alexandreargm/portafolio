@@ -27,8 +27,8 @@ export default {
   ** Global CSS
   */
   css: [
-    '~assets/css/variables.css',
     '~assets/css/reboot.css',
+    '~assets/css/variables.css',
     '~assets/css/typo.css',
     '~assets/css/theme.scss'
   ],
