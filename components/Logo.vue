@@ -1,5 +1,5 @@
 <template>
-  <a class="logo" href="/" alt="brand logo" aria-label="Brand logo">
+  <a class="logo" href="/" alt="brand logo" aria-label="Link to landing page">
     <svg role="img" class="logo__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 91.4 85.1">
       <polygon class="logo__path" points="17.8 49.4 39.5 75.4 34.7 85 0 85 17.8 49.4" />
       <polygon class="logo__path" points="72.1 35.5 24.8 35.5 42.5 0 72.1 35.5" />
