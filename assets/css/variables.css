@@ -4,7 +4,6 @@
   /* 
       COLOURS
   */
-
   --color-primary: #FFBD08;
   /* contrast colours */
   --color-bg: #00186E;
@@ -16,7 +15,6 @@
   /*
       FONTS
   */
-
   /* FONT FAMILIES */
   --font-header: "Public Sans", Arial, sans-serif;
   --font-body: "Roboto", Arial, sans-serif;
@@ -34,25 +32,30 @@
   --font-size-h1: 3.6rem;
   --font-size-title: 6rem;
 
+
+  /*
+    BREAKPOINTS
+  */
+  --mobile-landscape: 48rem;
+  --tablet-portrait: 76.8rem;
+  --tablet-landscape: 99.2rem;
+  --laptop: 120rem;
+
   /* 
       COMPONENT SIZES
   */
-
   /* MAIN COMPONENTS */
-
   /* Container */
-  --container-max-width: 120em;
-  --container-padding: 1.6em;
+  --container-max-width: 120rem;
+  --container-padding: 1.6rem;
 
   /* Navbar */
-  --navbar-height: 10em; /* 100px */
-  --navbar-height-fixed: 7em;
-  --navbar-max-width: 120em;
-
+  --navbar-height: 10rem; /* 100px */
+  --navbar-height-fixed: 7rem;
+  --navbar-max-width: 120rem;
 
 
   /* COMMON COMPONENTS */
-  
   /* Buttons */
   --button-radius: 0.5em;
   --button-border: 0.2em solid var(--color-primary);

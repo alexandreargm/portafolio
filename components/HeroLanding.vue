@@ -1,7 +1,7 @@
 <!-- HeroLanding.vue -->
 <template>
   <div class="herolanding">
-    <div class="herolading__wrapper container container-indent-1">
+    <div class="herolading__wrapper container">
       <div class="herolanding__hello text--h2 text--color-primary">
         Hola, me llamo
       </div>
