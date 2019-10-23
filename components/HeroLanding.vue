@@ -26,6 +26,7 @@
 .herolanding {
   display: flex;
   align-items: center;
+  padding-top: 4rem;
 }
 .herolanding__hello {
   margin-bottom: 1.2rem;
@@ -34,7 +35,15 @@
   margin-bottom: 0;
 }
 .herolanding__role {
-  margin-bottom: 4rem;
+  margin-bottom: 0;
+}
+.herolanding__role:after {
+    content: " ";
+    display: block;
+    width: 0.8em;
+    border-bottom: 0.15em solid var(--color-primary);
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
 }
 .herolanding__description {
   max-width: 26em;

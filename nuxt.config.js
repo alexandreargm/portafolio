@@ -1,15 +1,18 @@
 export default {
+  server: {
+    port: 80, // default: 3000
+    host: '0.0.0.0', // default: localhost
+  },
   mode: 'spa',
   /*
   ** Headers of the page
   */
   head: {
-    titleTemplate: 'Portafolio',
     // Set html lang atribute
     htmlAttrs: {
       lang: 'es',
     },
-    title: process.env.npm_package_name || '',
+    title: 'Portafolio',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },

@@ -12,7 +12,7 @@
 <style lang="scss">
 .logo {
   &__svg {
-    height: 5rem;
+    height: 4rem;
     width: auto;
   }
   &__path {

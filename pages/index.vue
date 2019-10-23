@@ -16,6 +16,9 @@
 import Navbar from '~/components/Navbar.vue'
 import HeroLanding from '~/components/HeroLanding.vue'
 
+const vh100 = document.documentElement.clientHeight
+document.documentElement.style.setProperty('--vh100', `${vh100}px`)
+
 export default {
   components: {
     Navbar,
@@ -28,9 +31,10 @@ export default {
 /* index.vue */
 
 .siteframe {
-  align-items: stretch;
+  //align-items: stretch;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
   height: 100%;
   position: relative;
 }
@@ -43,9 +47,14 @@ export default {
   z-index: 10;
 }
 .siteframe__main {
-  margin-top: var(--navbar-height);
+  @media screen and (min-width: 75em ) {
+    margin-top: var(--navbar-height);
+  }
 }
 .main__herolanding {
-  min-height: calc(100vh - var(--navbar-height));
+  min-height: 100vh;
+  @media screen and (min-width: 75em ) {
+    min-height: calc(100vh - var(--navbar-height) );
+  }
 }
 </style>
