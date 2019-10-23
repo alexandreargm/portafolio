@@ -1,3 +1,4 @@
+@charset 'utf-8';
 /* theme.scss */
 html {
   font-size: 10px;
@@ -116,7 +117,7 @@ html {
 }
 
 /* Container indents */
-.container-indent-1 { padding-left: calc(12rem + var(--container-padding)); }
-.container-indent-2 { padding-left: calc(24rem + var(--container-padding)); }
-.container-indent-3 { padding-left: calc(36rem + var(--container-padding)); }
-.container-indent-4 { padding-left: calc(48rem + var(--container-padding)); }
+.container--indent-1 { padding-left: calc( ( var(--container-column-width) ) + var(--container-padding) ); }
+.container--indent-2 { padding-left: calc( ( var(--container-column-width) * 2) + var(--container-padding)); }
+.container--indent-3 { padding-left: calc( ( var(--container-column-width) * 3) + var(--container-padding)); }
+.container--indent-4 { padding-left: calc( ( var(--container-column-width) * 4) + var(--container-padding)); }

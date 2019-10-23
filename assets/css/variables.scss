@@ -1,7 +1,5 @@
-html {
-  font-size: 10px;
-}
-/* variables.css */
+@charset 'utf-8';
+/* variables.scss */
 :root, [data-theme] {
   /* 
       COLOURS
@@ -34,16 +32,6 @@ html {
   --font-size-h1: 2rem;
   --font-size-title: 3rem;
 
-
-  /*
-    BREAKPOINTS
-  */
-  --mobile-portrait: 374px;
-  --mobile-landscape: 48rem;
-  --tablet-portrait: 76.8rem;
-  --tablet-landscape: 99.2rem;
-  --laptop: 120rem;
-
   /* 
       COMPONENT SIZES
   */
@@ -63,21 +51,33 @@ html {
   --button-radius: 0.5em;
   --button-border: 0.2em solid var(--color-primary);
 
+  /* CONTAINER INDENTS */
+  --column-count: 12;
+  --container-column-width: calc( 100vh / var(--column-count) );
+
 }
 
 /*  
   MEDIA QUERIES  
 */
+
 /*
-mobile-portrait:  374px = 23.4em
+mobile-portrait:  375px = 23.4em
 mobile-landscape: 480px = 30em
 tablet-portrait:  768px = 48em
 tablet-landscape: 992px = 62em
 laptop:           1200px = 75em
 */
 
+/* scss breakpoint variables */
+$bp-mobile-portrait: 23.4em;
+$bp-mobile-landscape: 30em;
+$bp-tablet-portrait: 48em;
+$bp-tablet-landscape: 62em;
+$bp-laptop: 75em;
+
 /*  MOBILE-PORTRAIT 374px  */
-@media (min-width: 23.4em ) {
+@media screen and (min-width: $bp-mobile-portrait ) {
   :root, [data-theme]  {
     /* FONT SIZES */
     --font-size-s: 1rem; /* 10px */
@@ -96,7 +96,7 @@ laptop:           1200px = 75em
 }
 
 /*  TABLET-PORTRAIT 768px  */
-@media (min-width: 48em) {
+@media screen and (min-width: $bp-tablet-portrait) {
   :root, [data-theme]  {
     /* FONT SIZES */
     --font-size-s: 1.4rem; /* 10px */

@@ -31,10 +31,10 @@ export default {
   ** Global CSS
   */
   css: [
-    '~assets/css/reboot.css',
-    '~assets/css/variables.css',
-    '~assets/css/typo.css',
-    '~assets/css/theme.scss'
+    '@/assets/css/reboot.css',
+    '@/assets/css/variables.scss',
+    '@/assets/css/typo.css',
+    '@/assets/css/theme.scss'
   ],
   /*
   ** Plugins to load before mounting the App

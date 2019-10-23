@@ -16,9 +16,6 @@
 import Navbar from '~/components/Navbar.vue'
 import HeroLanding from '~/components/HeroLanding.vue'
 
-const vh100 = document.documentElement.clientHeight
-document.documentElement.style.setProperty('--vh100', `${vh100}px`)
-
 export default {
   components: {
     Navbar,
