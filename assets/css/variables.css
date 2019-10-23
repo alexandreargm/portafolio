@@ -97,7 +97,16 @@ laptop:           1200px = 75em
 
 /*  TABLET-PORTRAIT 768px  */
 @media (min-width: 48em) {
-
+  :root, [data-theme]  {
+    /* FONT SIZES */
+    --font-size-s: 1.4rem; /* 10px */
+    --font-size-m: 1.6rem;
+    --font-size-l: 1.8rem;
+    --font-size-xl: 2rem;
+    --font-size-h2: 2.4rem;
+    --font-size-h1: 3.6rem;
+    --font-size-title: 6rem;
+  }
 }
 
 /*  TABLET-LANDSCAPE 992px  */

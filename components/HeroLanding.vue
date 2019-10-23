@@ -21,12 +21,15 @@
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 /* HeroLanding.vue */
 .herolanding {
   display: flex;
   align-items: center;
   padding-top: 4rem;
+  @media screen and (min-width: 48em){
+    padding-top: 0;
+  }
 }
 .herolanding__hello {
   margin-bottom: 1.2rem;
@@ -41,9 +44,9 @@
     content: " ";
     display: block;
     width: 0.8em;
-    border-bottom: 0.15em solid var(--color-primary);
-    margin-top: 2.5rem;
-    margin-bottom: 1.5rem;
+    border-bottom: 0.14em solid var(--color-primary);
+    margin-top: 0.5em;
+    margin-bottom: 0.3em;
 }
 .herolanding__description {
   max-width: 26em;
