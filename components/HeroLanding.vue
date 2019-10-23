@@ -31,7 +31,7 @@
   }
   &__wrapper {
     padding-top: 4rem;
-    @media (max-width: calc($bp-tablet-portrait - 0.0625em)) {
+    @media (max-width: calc(#{$tablet-portrait} - 0.0625em)) {
       padding-left: var(--container-padding) !important;
     }
   }

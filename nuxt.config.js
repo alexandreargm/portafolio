@@ -32,10 +32,17 @@ export default {
   */
   css: [
     '@/assets/css/reboot.css',
-    '@/assets/css/variables.scss',
     '@/assets/css/typo.css',
-    '@/assets/css/theme.scss'
   ],
+  /*
+    Global SCSS
+  */
+  styleResources: {
+    scss: [
+    '~assets/css/variables.scss',
+    '~assets/css/theme.scss'
+    ],
+   },
   /*
   ** Plugins to load before mounting the App
   */
@@ -54,6 +61,8 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
+    // Doc: https://github.com/nuxt-community/style-resources-module
+    '@nuxtjs/style-resources',
   ],
   /*
   ** Axios module configuration
