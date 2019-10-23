@@ -34,14 +34,9 @@ export default {
 <style lang="scss">
 /* Navbar.vue */
 .navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
+  display: flex;
   height: var(--navbar-height);
   flex: 1 100%;
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
   align-items: center;
   background-color: var(--color-bg);
 }
