@@ -1,6 +1,6 @@
 export default {
   env: {
-    baseUrl: process.env.BASE_URL || 'http://alexandreargibay.me'
+    baseUrl: process.env.BASE_URL || 'https://alexandreargibay.me'
   },
   server: {
     port: 80, // default: 3000
