@@ -1,6 +1,8 @@
 <!-- index.vue -->
 <template>
   <div class="siteframe" data-theme="default">
+    <!-- Social meta tags -->
+    <SocialHeadCard />
     <!-- Header and navigation -->
     <header class="header siteframe__header">
       <navbar class="header__navbar" />
@@ -13,11 +15,13 @@
 </template>
 
 <script>
+import SocialHeadCard from '~/components/SocialHeadCard.vue'
 import Navbar from '~/components/Navbar.vue'
 import HeroLanding from '~/components/HeroLanding.vue'
 
 export default {
   components: {
+    SocialHeadCard,
     Navbar,
     HeroLanding
   }
