@@ -9,7 +9,6 @@
   font-style: normal;
 }
 /* Roboto */
-/* roboto-regular - latin */
 @font-face {
   font-display: fallback;
   font-family: 'Roboto';
@@ -19,7 +18,6 @@
        url('../fonts/roboto/roboto-v20-latin-regular.woff2') format('woff2'), 
        url('../fonts/roboto/roboto-v20-latin-regular.woff') format('woff');
 }
-/* roboto-500 - latin */
 @font-face {
   font-display: fallback;
   font-family: 'Roboto';

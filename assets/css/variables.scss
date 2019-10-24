@@ -1,5 +1,15 @@
 @charset 'utf-8';
 /* variables.scss */
+/*  
+  MEDIA QUERY BREAKPOINTS 
+*/
+$mobile-portrait: 23.4375em; // 375px
+$mobile-landscape: 30em; // 480px
+$tablet-portrait: 48em; // 768px
+$tablet-landscape: 62em; // 992px
+$laptop: 75em; // 1200px
+
+/* TYPO AND COLOR VARS */
 :root, [data-theme] {
   /* 
       COLOURS
@@ -31,7 +41,10 @@
   --font-size-h2: 1.8rem;
   --font-size-h1: 2rem;
   --font-size-title: 3rem;
+}
 
+/* BLOCK AND ELEMENT VARS */
+:root {
   /* 
       COMPONENT SIZES
   */
@@ -54,67 +67,5 @@
   /* CONTAINER INDENTS */
   --column-count: 12;
   --container-column-width: calc( 100vh / var(--column-count) );
-
-}
-
-/*  
-  MEDIA QUERIES  
-*/
-
-/*
-mobile-portrait:  375px = 23.4em
-mobile-landscape: 480px = 30em
-tablet-portrait:  768px = 48em
-tablet-landscape: 992px = 62em
-laptop:           1200px = 75em
-*/
-
-/* scss breakpoint variables */
-$mobile-portrait: 23.4em;
-$mobile-landscape: 30em;
-$tablet-portrait: 48em;
-$tablet-landscape: 62em;
-$laptop: 75em;
-
-/*  MOBILE-PORTRAIT 374px  */
-@media screen and (min-width: $mobile-portrait ) {
-  :root, [data-theme]  {
-    /* FONT SIZES */
-    --font-size-s: 1rem; /* 10px */
-    --font-size-m: 1.2rem;
-    --font-size-l: 1.5rem;
-    --font-size-xl: 2rem;
-    --font-size-h2: 2rem;
-    --font-size-h1: 2.4rem;
-    --font-size-title: 3.6rem;
-  }
-}
-
-/*  MOBILE-LANDSCAPE 480px  */
-@media (min-width: 30em) {
-
-}
-
-/*  TABLET-PORTRAIT 768px  */
-@media screen and (min-width: $tablet-portrait) {
-  :root, [data-theme]  {
-    /* FONT SIZES */
-    --font-size-s: 1.4rem; /* 10px */
-    --font-size-m: 1.6rem;
-    --font-size-l: 1.8rem;
-    --font-size-xl: 2rem;
-    --font-size-h2: 2.4rem;
-    --font-size-h1: 3.6rem;
-    --font-size-title: 6rem;
-  }
-}
-
-/*  TABLET-LANDSCAPE 992px  */
-@media (min-width: 62em) {
-
-}
-
-/*  LAPTOP 1200px  */
-@media (min-width: 75em) {
 
 }

@@ -30,17 +30,18 @@ export default {
   /*
   ** Global CSS
   */
-  css: [
-    '@/assets/css/reboot.css',
-    '@/assets/css/typo.css',
-  ],
+ css: [
+  '@/assets/css/reboot.css',
+  '@/assets/css/typo.css',
+  '@/assets/css/theme.scss',
+  '@/assets/css/mediaqueries.scss',
+],
   /*
     Global SCSS
   */
   styleResources: {
     scss: [
-    '~assets/css/variables.scss',
-    '~assets/css/theme.scss'
+    '@/assets/css/variables.scss',
     ],
    },
   /*
