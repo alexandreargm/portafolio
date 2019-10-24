@@ -23,9 +23,9 @@ export default {
       { property: 'og:image', content: '/page_preview.png' },
       { property: 'og:url', content: '/' },
       { property: 'og:site_name', content: 'Alexandre Argibay | Desarrollador Web' },
-      { name="twitter:image:alt", content: 'Page preview' },
-      { name="twitter:site", content: '@AlexARGM' },
-      { name="twitter:card", content: 'summary_large_image' },
+      { name: 'twitter:image:alt', content: 'Page preview image' },
+      { name: 'twitter:site', content: '@AlexARGM' },
+      { name: 'twitter:card', content: 'summary_large_image' },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
