@@ -16,8 +16,16 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Alexandre Argibay es un desarrollador web con estancia en Torrevieja, Alicante especializado en la creación de aplicaciones web intuitivas con personalidad e integrados en back-ends modernos y eficientes' },
-      { name: "theme-color", content: "#00186E" }
+      { hid: 'description', name: 'description', content: 'Alexandre Argibay es un desarrollador web con estancia en Torrevieja, Alicante especializado en la creación de aplicaciones web intuitivas con personalidad e integrados en back-ends modernos y eficientes.' },
+      { name: 'theme-color', content: '#00186E' },
+      { property: 'og:title', content: 'Página personal de Alexandre Argibay' },
+      { property: 'og:description', content: 'Soy un desarrollador web con estancia en Torrevieja, Alicante especializado en la creación de aplicaciones web intuitivas con personalidad e integrados en back-ends modernos y eficientes.' },
+      { property: 'og:image', content: '/page_preview.png' },
+      { property: 'og:url', content: '/' },
+      { property: 'og:site_name', content: 'Alexandre Argibay | Desarrollador Web' },
+      { name="twitter:image:alt", content: 'Page preview' },
+      { name="twitter:site", content: '@AlexARGM' },
+      { name="twitter:card", content: 'summary_large_image' },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
