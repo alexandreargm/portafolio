@@ -6,7 +6,7 @@ export default {
     port: 80, // default: 3000
     host: '0.0.0.0', // default: localhost
   },
-  mode: 'spa',
+  //mode: 'spa',
   head: {
     htmlAttrs: {
       lang: 'es',
