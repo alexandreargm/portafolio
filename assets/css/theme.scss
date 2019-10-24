@@ -1,4 +1,3 @@
-@charset 'utf-8';
 /* theme.scss */
 html {
   font-size: 10px;
@@ -16,20 +15,21 @@ html {
 /*
   DINAMIC THEME
 */
+/* DEFAULT THEME */
 [data-theme] {
   background-color: var(--color-bg);
   color: var(--color-contrast-medium);
 }
 
-/*[data-theme="dark"] {
+/* DARK THEME */
+[data-theme="dark"] {
 
-}*/
+}
 
 
 /*
   TEXT STYLES
 */
-
 /* TEXT BASE STYLES*/
 .text--s {
   font-size: var(--font-size-s);
@@ -59,22 +59,22 @@ html {
   font-size: var(--font-size-h2);
   font-family: var(--font-header);
   font-weight: var(--font-weight-header);
-  line-height: 1.2em;
   color: var(--color-contrast-high);
+  line-height: 1.2em;
 }
 .text--h1 {
   font-size: var(--font-size-h1);
   font-family: var(--font-header);
   font-weight: var(--font-weight-header);
-  line-height: 1.2em;
   color: var(--color-contrast-high);
+  line-height: 1.2em;
 }
 .text--title {
   font-size: var(--font-size-title);
   font-family: var(--font-header);
   font-weight: var(--font-weight-header);
-  line-height: 1.2em;
   color: var(--color-contrast-high);
+  line-height: 1.2em;
 }
 
 /* TEXT COLOUR MODIFIERS */
@@ -88,7 +88,7 @@ html {
 /*
   COMMON COMPONENTS
 */
-
+/* CONTAINERS */
 .container {
   width: 100%;
   max-width: var(--container-max-width);
@@ -99,6 +99,23 @@ html {
   width: 100%;
   margin: 0 auto;
   padding: 0 var(--container-padding);
+}
+/* Container indents */
+.container--indent-1 { 
+  padding-left: calc( ((100% - (var(--container-padding) * 2)) / var(--column-count)) + var(--container-padding) );
+  padding-right: var(--container-padding);
+}
+.container--indent-2 { 
+  padding-left: calc( (((100% - (var(--container-padding) * 2)) / var(--column-count)) * 2 ) + var(--container-padding) );
+  padding-right: var(--container-padding); 
+}
+.container--indent-3 { 
+  padding-left: calc( (((100% - (var(--container-padding) * 2)) / var(--column-count)) * 3 ) + var(--container-padding) );
+  padding-right:var(--container-padding);
+}
+.container--indent-4 { 
+  padding-left: calc( (((100% - (var(--container-padding) * 2)) / var(--column-count)) * 4 ) + var(--container-padding) );
+  padding-right: var(--container-padding);
 }
 
 /* BUTTONS */
@@ -115,9 +132,3 @@ html {
 .button--big {
   padding: 0.8em 3em;
 }
-
-/* Container indents */
-.container--indent-1 { padding-left: calc( ( var(--container-column-width) ) + var(--container-padding) ); }
-.container--indent-2 { padding-left: calc( ( var(--container-column-width) * 2) + var(--container-padding)); }
-.container--indent-3 { padding-left: calc( ( var(--container-column-width) * 3) + var(--container-padding)); }
-.container--indent-4 { padding-left: calc( ( var(--container-column-width) * 4) + var(--container-padding)); }

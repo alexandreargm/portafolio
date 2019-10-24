@@ -32,7 +32,7 @@
   &__wrapper {
     padding-top: 4rem;
     @media screen and (max-width: calc(#{$tablet-portrait} - 0.0625em)) {
-      padding-left: var(--container-padding) !important;
+      padding: 0;
     }
   }
   &__hello {

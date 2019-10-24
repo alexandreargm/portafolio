@@ -1,4 +1,3 @@
-@charset 'utf-8';
 /* variables.scss */
 /*  
   MEDIA QUERY BREAKPOINTS 
@@ -9,13 +8,14 @@ $tablet-portrait: 48em; // 768px
 $tablet-landscape: 62em; // 992px
 $laptop: 75em; // 1200px
 
-/* TYPO AND COLOR VARS */
+/* 
+  TYPO AND COLOR CHARACTERISTICS
+*/
 :root, [data-theme] {
   /* 
       COLOURS
   */
   --color-primary: #FFBD08;
-  /* contrast colours */
   --color-bg: #00186E;
   --color-contrast-low: #A17C18;
   --color-contrast-medium: #95A2D3;
@@ -43,11 +43,10 @@ $laptop: 75em; // 1200px
   --font-size-title: 3rem;
 }
 
-/* BLOCK AND ELEMENT VARS */
+/* 
+  BLOCK AND ELEMENT CHARACTERISTICS 
+*/
 :root {
-  /* 
-      COMPONENT SIZES
-  */
   /* MAIN COMPONENTS */
   /* Container */
   --container-max-width: 120rem; /* 1200px*/
@@ -64,8 +63,7 @@ $laptop: 75em; // 1200px
   --button-radius: 0.5em;
   --button-border: 0.2em solid var(--color-primary);
 
-  /* CONTAINER INDENTS */
+  /* CONTAINER COLUMNS */
   --column-count: 12;
-  --container-column-width: calc( 100vh / var(--column-count) );
-
 }
+
