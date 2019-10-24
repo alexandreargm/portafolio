@@ -1,7 +1,7 @@
 <!-- HeroLanding.vue -->
 <template>
   <div class="herolanding">
-    <div class="herolanding__wrapper container container--indent-1">
+    <div class="herolanding__wrapper container">
       <div class="herolanding__hello text--h2 text--color-primary">
         Hola, me llamo
       </div>
@@ -31,8 +31,8 @@
   }
   &__wrapper {
     padding-top: 4rem;
-    @media screen and (max-width: calc(#{$tablet-portrait} - 0.0625em)) {
-      padding: 0;
+    @media screen and (min-width: $tablet-portrait) {
+      @include indent-container-left(1, var(--column-count), var(--container-padding));
     }
   }
   &__hello {
