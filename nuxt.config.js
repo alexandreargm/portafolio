@@ -12,7 +12,7 @@ export default {
     htmlAttrs: {
       lang: 'es',
     },
-    title: 'Portafolio',
+    title: 'Alexandre Argibay | Desarrollador Web',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -34,7 +34,6 @@ export default {
   '@/assets/css/reboot.css',
   '@/assets/css/typo.css',
   '@/assets/css/theme.scss',
-  '@/assets/css/mediaqueries.scss',
 ],
   /*
     Global SCSS
@@ -42,7 +41,7 @@ export default {
   styleResources: {
     scss: [
     '@/assets/css/variables.scss',
-    '@/assets/css/mixins.scss'
+    '@/assets/css/mixins.scss',
     ],
    },
   /*
