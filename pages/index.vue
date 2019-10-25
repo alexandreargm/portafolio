@@ -32,7 +32,6 @@ export default {
 /* index.vue */
 
 .siteframe {
-  //align-items: stretch;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
