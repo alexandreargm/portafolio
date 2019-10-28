@@ -17,6 +17,32 @@
         <p class="about-me__description text--l">
           Estas son algunas de las tecnologías que he usado ultimamente:
         </p>
+        <ul class="skills-list about-me__skills-list text--m">
+          <li class="skills-list__item">
+            JavaScript (ES6)
+          </li>
+          <li class="skills-list__item">
+            HTML y (S)CSS
+          </li>
+          <li class="skills-list__item">
+            JQuery
+          </li>
+          <li class="skills-list__item">
+            Node.js
+          </li>
+          <li class="skills-list__item">
+            Vue.js
+          </li>
+          <li class="skills-list__item">
+            Java 8
+          </li>
+          <li class="skills-list__item">
+            Laravel (PHP)
+          </li>
+          <li class="skills-list__item">
+            SQL
+          </li>
+        </ul>
       </div>
       <div class="photo about-me__media">
         <div class="photo__wrapper">
@@ -38,8 +64,12 @@
   &__wrapper {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     @media screen and (min-width: $tablet-portrait) {
       @include indent-container-left(1, var(--column-count), var(--container-padding));
+    }
+    @media screen and (min-width: $tablet-landscape ) {
+      flex-direction: row;
     }
   }
   &__head {
@@ -47,7 +77,6 @@
   }
   &__body {
     max-width: 50em;
-    margin-bottom: 6rem;
   }
   &__title {
     margin-bottom: 1.5em;
@@ -55,20 +84,36 @@
   &__description {
     margin-bottom: 1.4rem;
   }
+  &__skills-list {
+    padding-top: 1.5rem;
+  }
   &__media {
     width: 70%;
     max-width: 30rem;
-    margin: 0 auto;
+    margin: 4rem auto 0;
+    @media screen and (min-width: $tablet-landscape ) {
+      margin-top: 0;
+    }
+  }
+}
+
+.skills-list {
+  column-count: 2;
+  &__item {
+    margin-bottom: 1rem;
   }
 }
 
 .photo {
   &__wrapper {
-    background-color: var(--color-contrast-low);
+    border-radius: 0.2rem;
+    background: var(--color-contrast-medium);
   }
   &__image {
+    border-radius: 0.2rem;
     width: 100%;
     height: auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
   }
 }
 

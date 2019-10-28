@@ -1,6 +1,6 @@
 /// Mixin that indents an element inside a column based grid. 
 /// The indent is made using paddings.
-@mixin indent-container-left($indent-count, $column-count, $margin: 0) {
-    padding-left: calc( (( (100% - (#{$margin} * 2) ) / #{$column-count}) * #{$indent-count}) + #{$margin});
-    padding-right: $margin;
+@mixin indent-container-left($indent-count, $column-count, $layout-margin: 0) {
+    padding-left: calc( (( (100% - (#{$layout-margin} * 2) ) / #{$column-count}) * #{$indent-count}) + #{$layout-margin});
+    padding-right: $layout-margin;
 }

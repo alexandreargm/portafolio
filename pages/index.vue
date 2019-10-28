@@ -49,7 +49,7 @@ export default {
     z-index: 10;
   }
   &__main {
-    @media screen and (min-width: 75em ) {
+    @media screen and (min-width: $laptop ) {
       margin-top: var(--navbar-height);
     }
   }
@@ -58,18 +58,20 @@ export default {
 .main {
   &__herolanding {
     min-height: 100vh;
-    /*padding-top: 6rem;
-    padding-bottom: 10rem;*/
-    @media screen and (min-width: 75em ) {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    @media screen and (min-width: $laptop ) {
       min-height: calc(100vh - var(--navbar-height) );
+      padding: 0;
+      margin-bottom: 12rem;
     }
   }
   &__about-me {
-    min-height: 100vh;
-    /*padding-top: 10rem;
-    padding-bottom: 10rem;*/
-    @media screen and (min-width: 75em ) {
-      min-height: calc(100vh - var(--navbar-height) );
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    @media screen and (min-width: $laptop ) {
+      padding: 0;
+      margin-bottom: 12rem;
     }
   }
 }
