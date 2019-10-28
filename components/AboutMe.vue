@@ -34,10 +34,10 @@
             Vue.js
           </li>
           <li class="skills-list__item">
-            Java 8
+            Laravel (PHP)
           </li>
           <li class="skills-list__item">
-            Laravel (PHP)
+            Java
           </li>
           <li class="skills-list__item">
             SQL
