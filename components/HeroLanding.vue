@@ -36,7 +36,7 @@
     }
   }
   &__hello {
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.4rem;
   }
   &__name {
     margin-bottom: 0;
@@ -49,8 +49,8 @@
     display: block;
     width: 0.8em;
     border-bottom: 0.14em solid var(--color-primary);
-    margin-top: 0.5em;
-    margin-bottom: 0.3em;
+    margin-top: 0.6em;
+    margin-bottom: 0.4em;
   }
   &__description {
     max-width: 26em;

@@ -1,29 +1,31 @@
 <!-- index.vue -->
 <template>
   <div class="siteframe" data-theme="default">
-    <!-- Social meta tags -->
-    <SocialHeadCard />
-    <!-- Header and navigation -->
+    <SocialMetaTags />
+    <!-- header -->
     <header class="header siteframe__header">
-      <navbar class="header__navbar" />
+      <Navbar class="header__navbar" />
     </header>
     <!-- main -->
     <main class="main siteframe__main">
       <HeroLanding class="main__herolanding" />
+      <AboutMe class="main__about-me" />
     </main>
   </div>
 </template>
 
 <script>
-import SocialHeadCard from '~/components/SocialHeadCard.vue'
+import SocialMetaTags from '~/components/SocialMetaTags.vue'
 import Navbar from '~/components/Navbar.vue'
 import HeroLanding from '~/components/HeroLanding.vue'
+import AboutMe from '~/components/AboutMe.vue'
 
 export default {
   components: {
-    SocialHeadCard,
+    SocialMetaTags,
     Navbar,
-    HeroLanding
+    HeroLanding,
+    AboutMe
   }
 }
 </script>
@@ -53,10 +55,23 @@ export default {
   }
 }
 
-.main__herolanding {
-  min-height: 100vh;
-  @media screen and (min-width: 75em ) {
-    min-height: calc(100vh - var(--navbar-height) );
+.main {
+  &__herolanding {
+    min-height: 100vh;
+    /*padding-top: 6rem;
+    padding-bottom: 10rem;*/
+    @media screen and (min-width: 75em ) {
+      min-height: calc(100vh - var(--navbar-height) );
+    }
+  }
+  &__about-me {
+    min-height: 100vh;
+    /*padding-top: 10rem;
+    padding-bottom: 10rem;*/
+    @media screen and (min-width: 75em ) {
+      min-height: calc(100vh - var(--navbar-height) );
+    }
   }
 }
+
 </style>
