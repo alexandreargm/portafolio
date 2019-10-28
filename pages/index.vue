@@ -28,7 +28,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 /* index.vue */
 
 .siteframe {
@@ -37,20 +37,22 @@ export default {
   min-height: 100vh;
   height: 100%;
   position: relative;
-}
-.siteframe__header {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: var(--color-bg);
-  z-index: 10;
-}
-.siteframe__main {
-  @media screen and (min-width: 75em ) {
-    margin-top: var(--navbar-height);
+
+  &__header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--color-bg);
+    z-index: 10;
+  }
+  &__main {
+    @media screen and (min-width: 75em ) {
+      margin-top: var(--navbar-height);
+    }
   }
 }
+
 .main__herolanding {
   min-height: 100vh;
   @media screen and (min-width: 75em ) {
