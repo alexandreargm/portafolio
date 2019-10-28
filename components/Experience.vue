@@ -7,8 +7,6 @@
           Experiencia
         </h1>
       </div>
-      <div class="experience__body">
-      </div>
     </div>
   </section>
 </template>
