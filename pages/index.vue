@@ -10,11 +10,13 @@
     <main class="main siteframe__main">
       <HeroLanding class="main__herolanding" />
       <AboutMe class="main__about-me" />
+      <Experience class="main__experience" />
     </main>
   </div>
 </template>
 
 <script>
+import Experience from '~/components/Experience.vue'
 import SocialMetaTags from '~/components/SocialMetaTags.vue'
 import Navbar from '~/components/Navbar.vue'
 import HeroLanding from '~/components/HeroLanding.vue'
@@ -25,7 +27,8 @@ export default {
     SocialMetaTags,
     Navbar,
     HeroLanding,
-    AboutMe
+    AboutMe,
+    Experience
   }
 }
 </script>
