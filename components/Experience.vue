@@ -2,14 +2,114 @@
 <template>
   <section class="experience">
     <div class="experience__wrapper container">
-      <div class="experience__head">
-        <h1 class="experience__title text--h1">
-          Experiencia
-        </h1>
-      </div>
+      <h1 class="experience__title text--h1">
+        Experiencia
+      </h1>
+      <tabs class="experience__tabs">
+        <tab name="Mi ElectroSalomé" :selected="true" class="tabs__tab">
+          <div class="tab__header">
+            <h2 class="tab__title text--h2">
+              Desarrollo web, Diseño y Marketing <span class="text--color-primary">en Mi ElectroSalomé</span>
+            </h2>
+            <p class="tab__when text--m">
+              Octubre 2018 - agosto 2019, Torrevieja, España
+            </p>
+          </div>
+          <ul class="task-list tab__task-list">
+            <li class="task-list__item">
+              Diseño, desarrollo y mantenimiento de la página web de empresa y tienda e-commerce con las tecnologías WordPress y PrestaShop.
+            </li>
+            <li class="task-list__item">
+              Diseño, creación y lanzamiento de campañas de publicidad mediante envio de correo electrónico masivo, publicidad en el lugar de venta, flyers y publicaciones en revistas mensuales de publicidad.
+            </li>
+            <li class="task-list__item">
+              Gestión y optimización de la ficha de empresa en Google My Business.
+            </li>
+          </ul>
+        </tab>
+        <tab name="Intersys IT" class="tabs__tab">
+          <div class="job tabs__job">
+            <div class="job__header">
+              <h2 class="job__title text--h2">
+                Desarrollo web y Diseño <span class="text--color-primary">en Intersys IT</span>
+              </h2>
+              <p class="job__when text--m">
+                Septiembre 2018, Londres, Reino Unido
+              </p>
+            </div>
+            <ul class="task-list job__task-list">
+              <li class="task-list__item">
+                Diseño, desarrollo y mantenimiento de la página web de empresa y tienda e-commerce con las tecnologías WordPress y PrestaShop.
+              </li>
+              <li class="task-list__item">
+                Diseño, creación y lanzamiento de campañas de publicidad mediante envio de correo electrónico masivo, publicidad en el lugar de venta, flyers y publicaciones en revistas mensuales de publicidad.
+              </li>
+              <li class="task-list__item">
+                Gestión y optimización de la ficha de empresa en Google My Business.
+              </li>
+            </ul>
+          </div>
+          <div class="job tabs__job">
+            <div class="job__header">
+              <h2 class="job__title text--h2">
+                Desarrollo web y Diseño (prácticas) <span class="text--color-primary">en Intersys IT</span>
+              </h2>
+              <p class="job__when text--m">
+                Mayo 2018 - julio 2018, Londres, Reino Unido
+              </p>
+            </div>
+            <ul class="task-list job__task-list">
+              <li class="task-list__item">
+                Diseño, desarrollo y mantenimiento de la página web de empresa y tienda e-commerce con las tecnologías WordPress y PrestaShop.
+              </li>
+              <li class="task-list__item">
+                Diseño, creación y lanzamiento de campañas de publicidad mediante envio de correo electrónico masivo, publicidad en el lugar de venta, flyers y publicaciones en revistas mensuales de publicidad.
+              </li>
+              <li class="task-list__item">
+                Gestión y optimización de la ficha de empresa en Google My Business.
+              </li>
+            </ul>
+          </div>
+        </tab>
+        <tab name="Clínica Virgen del Pilar" class="tabs__tab">
+          <div class="job tab__job">
+            <div class="job__header">
+              <h2 class="job__title text--h2">
+                Desarrollo web y Diseño (prácticas) <span class="text--color-primary">en Clínica Virgen del Pilar</span>
+              </h2>
+              <p class="job__when text--m">
+                Abril 2014 - junio 2014, Torrevieja, España
+              </p>
+            </div>
+            <ul class="task-list job__task-list">
+              <li class="task-list__item">
+                Diseño, desarrollo y mantenimiento de la página web de empresa y tienda e-commerce con las tecnologías WordPress y PrestaShop.
+              </li>
+              <li class="task-list__item">
+                Diseño, creación y lanzamiento de campañas de publicidad mediante envio de correo electrónico masivo, publicidad en el lugar de venta, flyers y publicaciones en revistas mensuales de publicidad.
+              </li>
+              <li class="task-list__item">
+                Gestión y optimización de la ficha de empresa en Google My Business.
+              </li>
+            </ul>
+          </div>
+        </tab>
+      </tabs>
     </div>
   </section>
 </template>
+
+<script>
+import Tabs from '~/components/Tabs.vue'
+import Tab from '~/components/Tab.vue'
+
+export default {
+  components: {
+    Tabs,
+    Tab
+  }
+}
+</script>
 
 <style scoped lang="scss">
 /* AboutMe.vue */
@@ -20,58 +120,27 @@
     padding-top: 0;
   }
   &__wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
     @media screen and (min-width: $tablet-portrait) {
       @include indent-container-left(1, var(--column-count), var(--container-padding));
     }
-    @media screen and (min-width: $tablet-landscape ) {
-      flex-direction: row;
-    }
-  }
-  &__head {
-    flex: 1 0 100%;
-  }
-  &__body {
-    max-width: 50em;
   }
   &__title {
-    margin-bottom: 1.5em;
+    margin-bottom: 1.3em;
   }
-  &__description {
-    margin-bottom: 1.4rem;
-  }
-  &__skills-list {
-    padding-top: 1.5rem;
-  }
-  &__media {
-    width: 70%;
-    max-width: 30rem;
-    margin: 4rem auto 0;
-    @media screen and (min-width: $tablet-landscape ) {
-      margin-top: 0;
+  &__tabs {
+    .job {
+      margin-bottom: 4em;
+      &__header {
+        margin-bottom: 2em;
+      }
     }
-  }
-}
-
-.skills-list {
-  column-count: 2;
-  &__item {
-    margin-bottom: 1rem;
-  }
-}
-
-.photo {
-  &__wrapper {
-    border-radius: 0.2rem;
-    background: var(--color-contrast-medium);
-  }
-  &__image {
-    border-radius: 0.2rem;
-    width: 100%;
-    height: auto;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    .task-list {
+      padding-left: 2rem;
+      &__item {
+        max-width: 50em;
+        margin-bottom: 1.4rem;
+      }
+    }
   }
 }
 

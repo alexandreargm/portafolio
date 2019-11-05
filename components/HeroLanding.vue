@@ -1,6 +1,6 @@
 <!-- HeroLanding.vue -->
 <template>
-  <div class="herolanding">
+  <section class="herolanding">
     <div class="herolanding__wrapper container">
       <div class="herolanding__hello text--h2 text--color-primary">
         Hola, me llamo
@@ -18,7 +18,7 @@
         Contactar
       </a>
     </div>
-  </div>
+  </section>
 </template>
 
 <style scoped lang="scss">

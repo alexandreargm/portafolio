@@ -1,6 +1,6 @@
 <!-- AboutMe.vue -->
 <template>
-  <div class="about-me">
+  <section class="about-me">
     <div class="about-me__wrapper container">
       <div class="about-me__head">
         <h1 class="about-me__title text--h1">
@@ -50,7 +50,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <style scoped lang="scss">
@@ -79,7 +79,7 @@
     max-width: 50em;
   }
   &__title {
-    margin-bottom: 1.5em;
+    margin-bottom: 1.3em;
   }
   &__description {
     margin-bottom: 1.4rem;

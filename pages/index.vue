@@ -77,6 +77,14 @@ export default {
       margin-bottom: 12rem;
     }
   }
+  &__experience {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    @media screen and (min-width: $laptop ) {
+      padding: 0;
+      margin-bottom: 12rem;
+    }
+  }
 }
 
 </style>
