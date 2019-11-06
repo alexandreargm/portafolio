@@ -38,8 +38,26 @@ export default {
 <style scoped lang="scss">
 /* Tabs.vue */
 $tab-count: 3;
+$tab-height: 4.2rem;
+$tab-width: 20rem;
+$tab-selector: ".menu__item";
+$indicator-selector: ".slider__indicator";
+
+@mixin tabs($tab-selector, $indicator-selector) {
+  @for $i from 1 through $tab-count {
+    @at-root #{$tab-selector}:nth-of-type(#{$i}).is-active {
+      #{$indicator-selector} {
+        transform: translateX(#{ 100% * ($i - 1) });
+        content: $i;
+      }
+    }
+  }
+}
 
 .tabs {
+  @media screen and (min-width: $laptop) {
+    display: flex;
+  }
 }
 
 .menu {
@@ -53,10 +71,14 @@ $tab-count: 3;
     flex-direction: column;
   }
   &__wrapper {
-    width: auto;
-    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
     overflow-x: scroll;
     margin: 0 0 2em 0;
+    @media screen and (min-width: $laptop) {
+      overflow-x: visible;
+      flex-direction: row-reverse;
+    }
   }
   &__item {
     &.is-active {
@@ -69,8 +91,8 @@ $tab-count: 3;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 4.2rem;
-    min-width: 20rem;
+    height: $tab-height;
+    width: $tab-width;
     padding: 0 1.5rem;
     color: var(--color-contrast-medium);
     @media screen and (min-width: $laptop) {
@@ -84,12 +106,42 @@ $tab-count: 3;
 
 .slider {
   height: 0.2rem;
+  width: #{$tab-width * $tab-count};
   background-color: var(--color-contrast-medium);
+  @media screen and (min-width: $laptop) {
+    height: #{$tab-height * $tab-count};
+    width: 0.2rem;
+  }
   &__indicator {
     height: inherit;
     background-color: var(--color-primary);
     width: #{100%/$tab-count};
+    @media screen and (min-width: $laptop) {
+      height: $tab-height;
+      width: 0.2rem;
+    }
   }
 }
+
+.menu__item:nth-of-type(1).is-active {
+  background: red;
+  .slider__indicator {
+    transform: translateX(#{ 100% * (1 - 1) });
+  }
+}
+.menu__item:nth-of-type(2).is-active {
+  background: red;
+  .slider__indicator {
+    transform: translateX(#{ 100% * (2 - 1) });
+  }
+}
+.menu__item:nth-of-type(3).is-active {
+  background: red;
+  .slider__indicator {
+    transform: translateX(#{ 100% * (3 - 1) });
+  }
+}
+
+//@include tabs ($tab-selector, $indicator-selector);
 
 </style>
