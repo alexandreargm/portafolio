@@ -6,10 +6,8 @@
         <li v-for="tab in tabs" :key="tab" :class="{ 'is-active': tab.isActive }" class="menu__item text--m">
           <a :href="tab.href" class="menu__link" @click="selectTab(tab)">{{ tab.name }}</a>
         </li>
+        <div class="menu__highlight" role="presentation" />
       </ul>
-      <div class="slider menu__slider">
-        <div class="slider__indicator" />
-      </div>
     </div>
     <div class="tabs__content text--l">
       <slot />
@@ -41,14 +39,15 @@ $tab-count: 3;
 $tab-height: 4.2rem;
 $tab-width: 20rem;
 $tab-selector: ".menu__item";
-$indicator-selector: ".slider__indicator";
+$highlight-selector: ".menu__highlight";
 
-@mixin tabs($tab-selector, $indicator-selector) {
+@mixin tabs($tab-selector, $highlight-selector) {
   @for $i from 1 through $tab-count {
-    @at-root #{$tab-selector}:nth-of-type(#{$i}).is-active {
-      #{$indicator-selector} {
-        transform: translateX(#{ 100% * ($i - 1) });
-        content: $i;
+    #{$tab-selector}:nth-of-type(#{$i}).is-active ~ #{$highlight-selector} {
+      left: #{ $tab-width * ($i - 1) };
+      @media screen and (min-width: $laptop) {
+        left: 0;
+        top: #{ $tab-height * ($i - 1) };
       }
     }
   }
@@ -71,6 +70,7 @@ $indicator-selector: ".slider__indicator";
     flex-direction: column;
   }
   &__wrapper {
+    position: relative;
     display: flex;
     flex-direction: column;
     overflow-x: scroll;
@@ -102,46 +102,23 @@ $indicator-selector: ".slider__indicator";
       color: var(--color-primary);
     }
   }
-}
-
-.slider {
-  height: 0.2rem;
-  width: #{$tab-width * $tab-count};
-  background-color: var(--color-contrast-medium);
-  @media screen and (min-width: $laptop) {
-    height: #{$tab-height * $tab-count};
-    width: 0.2rem;
-  }
-  &__indicator {
-    height: inherit;
+  &__highlight {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0.2rem;
+    width: $tab-width;
     background-color: var(--color-primary);
-    width: #{100%/$tab-count};
+    transition: left 0.25s;
     @media screen and (min-width: $laptop) {
       height: $tab-height;
       width: 0.2rem;
+      top: 0;
+      transition: top 0.25s;
     }
   }
 }
 
-.menu__item:nth-of-type(1).is-active {
-  background: red;
-  .slider__indicator {
-    transform: translateX(#{ 100% * (1 - 1) });
-  }
-}
-.menu__item:nth-of-type(2).is-active {
-  background: red;
-  .slider__indicator {
-    transform: translateX(#{ 100% * (2 - 1) });
-  }
-}
-.menu__item:nth-of-type(3).is-active {
-  background: red;
-  .slider__indicator {
-    transform: translateX(#{ 100% * (3 - 1) });
-  }
-}
-
-//@include tabs ($tab-selector, $indicator-selector);
+@include tabs ($tab-selector, $highlight-selector);
 
 </style>

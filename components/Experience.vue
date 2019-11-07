@@ -7,25 +7,27 @@
       </h1>
       <tabs class="experience__tabs">
         <tab name="Mi ElectroSalomé" :selected="true" class="tabs__tab">
-          <div class="tab__header">
-            <h2 class="tab__title text--h2">
-              Desarrollo web, Diseño y Marketing <span class="text--color-primary">en Mi ElectroSalomé</span>
-            </h2>
-            <p class="tab__when text--m">
-              Octubre 2018 - agosto 2019, Torrevieja, España
-            </p>
+          <div class="job tabs__job">
+            <div class="job__header">
+              <h2 class="job__title text--h2">
+                Desarrollo web, Diseño y Marketing <span class="text--color-primary">en Mi ElectroSalomé</span>
+              </h2>
+              <p class="job__when text--m">
+                Octubre 2018 - agosto 2019, Torrevieja, España
+              </p>
+            </div>
+            <ul class="task-list job__task-list">
+              <li class="task-list__item">
+                Diseño, desarrollo y mantenimiento de la página web de empresa y tienda e-commerce con las tecnologías WordPress y PrestaShop.
+              </li>
+              <li class="task-list__item">
+                Diseño, creación y lanzamiento de campañas de publicidad mediante envio de correo electrónico masivo, publicidad en el lugar de venta, flyers y publicaciones en revistas mensuales de publicidad.
+              </li>
+              <li class="task-list__item">
+                Gestión y optimización de la ficha de empresa en Google My Business.
+              </li>
+            </ul>
           </div>
-          <ul class="task-list tab__task-list">
-            <li class="task-list__item">
-              Diseño, desarrollo y mantenimiento de la página web de empresa y tienda e-commerce con las tecnologías WordPress y PrestaShop.
-            </li>
-            <li class="task-list__item">
-              Diseño, creación y lanzamiento de campañas de publicidad mediante envio de correo electrónico masivo, publicidad en el lugar de venta, flyers y publicaciones en revistas mensuales de publicidad.
-            </li>
-            <li class="task-list__item">
-              Gestión y optimización de la ficha de empresa en Google My Business.
-            </li>
-          </ul>
         </tab>
         <tab name="Intersys IT" class="tabs__tab">
           <div class="job tabs__job">
@@ -132,6 +134,9 @@ export default {
       margin-bottom: 4em;
       &__header {
         margin-bottom: 2em;
+      }
+      @media screen and (min-width: $laptop) {
+        @include indent-container-left(1, var(--column-count), var(--container-padding));
       }
     }
     .task-list {
