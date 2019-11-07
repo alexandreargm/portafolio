@@ -39,6 +39,7 @@ $tab-count: 3;
 $tab-height: 4.2rem;
 $tab-width: 20rem;
 $tab-selector: ".menu__item";
+$highlight-height: 0.2rem;
 $highlight-selector: ".menu__highlight";
 
 @mixin tabs($tab-selector, $highlight-selector) {
@@ -91,12 +92,15 @@ $highlight-selector: ".menu__highlight";
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: $highlight-height;
     height: $tab-height;
     width: $tab-width;
     padding: 0 1.5rem;
     color: var(--color-contrast-medium);
     @media screen and (min-width: $laptop) {
       justify-content: left;
+      margin-bottom: 0;
+      margin-left: $highlight-height;
     }
     &:hover, &:focus, &:active {
       color: var(--color-primary);
@@ -106,13 +110,13 @@ $highlight-selector: ".menu__highlight";
     position: absolute;
     left: 0;
     bottom: 0;
-    height: 0.2rem;
+    height: $highlight-height;
     width: $tab-width;
     background-color: var(--color-primary);
     transition: left 0.25s;
     @media screen and (min-width: $laptop) {
       height: $tab-height;
-      width: 0.2rem;
+      width: $highlight-height;
       top: 0;
       transition: top 0.25s;
     }
