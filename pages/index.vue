@@ -60,63 +60,66 @@ $section-bottom-margin: 12rem;
     @media screen and (min-width: $laptop ) {
       margin-top: var(--navbar-height);
     }
-    &__herolanding {
-      min-height: 100vh;
-      padding-top: $section-y-padding;
-      padding-bottom: $section-y-padding;
-      @media screen and (min-width: $mobile-landscape) {
-          @include indent(1, var(--column-count), $mobile-landscape-rem, var(--container-padding));
-      }
-      @media screen and (min-width: $tablet-portrait) {
-          @include indent(1, var(--column-count), $tablet-portrait-rem, var(--container-padding));
-      }
-      @media screen and (min-width: $laptop ) {
-        @include indent(2, var(--column-count), $laptop-rem, var(--container-padding));
-        min-height: calc(100vh - var(--navbar-height) );
-        margin-bottom: $section-bottom-margin;
-      }
+  }
+}
+
+.main {
+  &__herolanding {
+    min-height: 100vh;
+    padding-top: $section-y-padding;
+    padding-bottom: $section-y-padding;
+    @media screen and (min-width: $mobile-landscape) {
+        @include indent(1, var(--column-count), $mobile-landscape-rem, var(--container-padding));
     }
-    &__about-me {
-      padding-top: $section-y-padding;
-      padding-bottom: $section-y-padding;
-      @media screen and (min-width: $mobile-landscape) {
-          @include indent(1, var(--column-count), $mobile-landscape-rem, var(--container-padding));
-      }
-      @media screen and (min-width: $tablet-portrait) {
-          @include indent(1, var(--column-count), $tablet-portrait-rem, var(--container-padding));
-      }
-      @media screen and (min-width: $laptop ) {
-        @include indent(2, var(--column-count), $laptop-rem, var(--container-padding));
-        margin-bottom: $section-bottom-margin;
-      }
+    @media screen and (min-width: $tablet-portrait) {
+        @include indent(1, var(--column-count), $tablet-portrait-rem, var(--container-padding));
     }
-    &__experience {
-      padding-top: $section-y-padding;
-      padding-bottom: $section-y-padding;
-      @media screen and (min-width: $mobile-landscape) {
-          @include indent(1, var(--column-count), $mobile-landscape-rem, var(--container-padding));
-      }
-      @media screen and (min-width: $tablet-portrait) {
-          @include indent(1, var(--column-count), $tablet-portrait-rem, var(--container-padding));
-      }
-      @media screen and (min-width: $laptop ) {
-        @include indent(2, var(--column-count), $laptop-rem, var(--container-padding));
-        margin-bottom: $section-bottom-margin;
-      }
+    @media screen and (min-width: $laptop ) {
+      @include indent(2, var(--column-count), $laptop-rem, var(--container-padding));
+      min-height: calc(100vh - var(--navbar-height) );
+      margin-bottom: $section-bottom-margin;
     }
-    &__contact {
-      padding-top: $section-y-padding;
-      padding-bottom: $section-y-padding;
-      @media screen and (min-width: $mobile-landscape) {
-          @include indent(2, var(--column-count), $mobile-landscape-rem, var(--container-padding));
-      }
-      @media screen and (min-width: $tablet-portrait) {
-          @include indent(2, var(--column-count), $tablet-portrait-rem, var(--container-padding));
-      }
-      @media screen and (min-width: $laptop ) {
-        @include indent(4, var(--column-count), $laptop-rem, var(--container-padding));
-        margin-bottom: $section-bottom-margin;
-      }
+  }
+  &__about-me {
+    padding-top: $section-y-padding;
+    padding-bottom: $section-y-padding;
+    @media screen and (min-width: $mobile-landscape) {
+        @include indent(1, var(--column-count), $mobile-landscape-rem, var(--container-padding));
+    }
+    @media screen and (min-width: $tablet-portrait) {
+        @include indent(2, var(--column-count), $tablet-portrait-rem, var(--container-padding));
+    }
+    @media screen and (min-width: $laptop ) {
+      @include indent(2, var(--column-count), $laptop-rem, var(--container-padding));
+      margin-bottom: $section-bottom-margin;
+    }
+  }
+  &__experience {
+    padding-top: $section-y-padding;
+    padding-bottom: $section-y-padding;
+    @media screen and (min-width: $mobile-landscape) {
+        @include indent(1, var(--column-count), $mobile-landscape-rem, var(--container-padding));
+    }
+    @media screen and (min-width: $tablet-portrait) {
+        @include indent(1, var(--column-count), $tablet-portrait-rem, var(--container-padding));
+    }
+    @media screen and (min-width: $laptop ) {
+      @include indent(2, var(--column-count), $laptop-rem, var(--container-padding));
+      margin-bottom: $section-bottom-margin;
+    }
+  }
+  &__contact {
+    padding-top: $section-y-padding;
+    padding-bottom: $section-y-padding;
+    @media screen and (min-width: $mobile-landscape) {
+        @include indent(2, var(--column-count), $mobile-landscape-rem, var(--container-padding));
+    }
+    @media screen and (min-width: $tablet-portrait) {
+        @include indent(3, var(--column-count), $tablet-portrait-rem, var(--container-padding));
+    }
+    @media screen and (min-width: $laptop ) {
+      @include indent(3, var(--column-count), $laptop-rem, var(--container-padding));
+      margin-bottom: $section-bottom-margin;
     }
   }
 }

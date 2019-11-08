@@ -17,17 +17,17 @@
         <p class="contact__description text--l">
           Lo mejor que puedes hacer para contactar conmigo es escribirme a mi correo. ¡Intentaré responder lo más pronto posible!
         </p>
-        <div class="buttons contact__buttons">
-          <div class="buttons__button">
-            <a href="mailto:alexandreargm@gmail.com" role="button" class="button text--m text--color-primary">
-              Email alexandreargm@gmail.com
-            </a>
-          </div>
-          <div class="buttons__button">
-            <a href="mailto:+34653020231" role="button" class="button text--m text--color-primary">
-              LLamar 653 020 231
-            </a>
-          </div>
+      </div>
+      <div class="buttons contact__buttons">
+        <div class="buttons__button">
+          <a href="mailto:alexandreargm@gmail.com" role="button" class="button text--m text--color-primary">
+            Email alexandreargm@gmail.com
+          </a>
+        </div>
+        <div class="buttons__button">
+          <a href="mailto:+34653020231" role="button" class="button text--m text--color-primary">
+            LLamar 653 020 231
+          </a>
         </div>
       </div>
     </div>
@@ -45,11 +45,11 @@
     margin-bottom: 2rem;
   }
   &__buttons {
-    margin-top: 3rem;
+    margin-top: 4rem;
   }
   .buttons {
     &__button {
-      margin-bottom: 1.6em;
+      margin-bottom: 2em;
     }
   }
 }

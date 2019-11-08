@@ -45,9 +45,7 @@
         </ul>
       </div>
       <div class="photo about-me__media">
-        <div class="photo__wrapper">
-          <img src="/foto_perfil.jpg" alt="Foto de perfil" class="photo__image">
-        </div>
+        <img src="/foto_perfil.jpg" alt="Foto de perfil" class="photo__image">
       </div>
     </div>
   </section>
@@ -70,7 +68,7 @@
     flex: 1 0 100%;
   }
   &__body {
-    max-width: 50em;
+    max-width: 45em;
   }
   &__title {
     margin-bottom: 1.3em;
@@ -81,33 +79,37 @@
   &__skills-list {
     padding-top: 1.5rem;
   }
-  &__media {
-    width: 70%;
-    max-width: 30rem;
-    margin: 4rem auto 0;
-    @media screen and (min-width: $tablet-landscape ) {
-      margin-top: 0;
+  .skills-list {
+    column-count: 2;
+    &__item {
+      margin-bottom: 1rem;
     }
   }
-}
-
-.skills-list {
-  column-count: 2;
-  &__item {
-    margin-bottom: 1rem;
-  }
-}
-
-.photo {
-  &__wrapper {
-    border-radius: 0.2rem;
-    background: var(--color-contrast-medium);
-  }
-  &__image {
-    border-radius: 0.2rem;
-    width: 100%;
-    height: auto;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  &__media {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    margin-top: 4rem;
+    @media screen and (min-width: $tablet-portrait) {
+      justify-content: left;
+      @include indent(1, var(--column-count), $tablet-portrait-rem);
+    }
+    @media screen and (min-width: $tablet-landscape) {
+      margin-top: 0;
+      @include indent(1, var(--column-count), $tablet-landscape-rem);
+    }
+    @media screen and (min-width: $laptop) {
+      @include indent(1, var(--column-count), $laptop-rem);
+    }
+    .photo {
+      &__image {
+        max-width: 30rem;
+        border-radius: 0.2rem;
+        width: 100%;
+        height: auto;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      }
+    }
   }
 }
 
