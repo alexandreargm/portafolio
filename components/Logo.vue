@@ -19,7 +19,7 @@
     fill: var(--color-primary);
   }
   &__path--alt-color {
-    fill: var(--color-contrast-low);
+    fill: var(--color-contrast-medium);
   }
 }
 </style>

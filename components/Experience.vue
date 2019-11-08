@@ -123,6 +123,7 @@ export default {
   }
   &__tabs {
     .job {
+      max-width: 45em;
       margin-bottom: 4em;
       @media screen and (min-width: $laptop) {
         @include indent(1, var(--column-count), var(--container-max-width));
@@ -134,7 +135,7 @@ export default {
     .task-list {
       padding-left: 2rem;
       &__item {
-        max-width: 50em;
+        max-width: 40em;
         margin-bottom: 1.4rem;
       }
     }

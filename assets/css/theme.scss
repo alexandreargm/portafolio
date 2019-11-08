@@ -98,23 +98,6 @@ html {
   margin: 0 auto;
   padding: 0 var(--container-padding);
 }
-/* Container indents */
-.container--indent-1 { 
-  padding-left: calc( ((100% - (var(--container-padding) * 2)) / var(--column-count)) + var(--container-padding) );
-  padding-right: var(--container-padding);
-}
-.container--indent-2 { 
-  padding-left: calc( (((100% - (var(--container-padding) * 2)) / var(--column-count)) * 2 ) + var(--container-padding) );
-  padding-right: var(--container-padding); 
-}
-.container--indent-3 { 
-  padding-left: calc( (((100% - (var(--container-padding) * 2)) / var(--column-count)) * 3 ) + var(--container-padding) );
-  padding-right:var(--container-padding);
-}
-.container--indent-4 { 
-  padding-left: calc( (((100% - (var(--container-padding) * 2)) / var(--column-count)) * 4 ) + var(--container-padding) );
-  padding-right: var(--container-padding);
-}
 
 /* BUTTONS */
 .button {

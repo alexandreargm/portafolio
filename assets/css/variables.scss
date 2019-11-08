@@ -7,6 +7,12 @@ $mobile-landscape: 30em; // 480px
 $tablet-portrait: 48em; // 768px
 $tablet-landscape: 62em; // 992px
 $laptop: 75em; // 1200px
+/* rem breakpoints for calculations */
+$mobile-portrait-rem: 37.5rem; // 375px
+$mobile-landscape-rem: 48rem; // 480px
+$tablet-portrait-rem: 76.8rem; // 768px
+$tablet-landscape-rem: 99.2rem; // 992px
+$laptop-rem: 120rem; // 1200px
 
 /* 
   TYPO AND COLOR CHARACTERISTICS
@@ -55,7 +61,7 @@ $laptop: 75em; // 1200px
   /* Navbar */
   --navbar-height: 10rem; /* 100px */
   --navbar-height-fixed: 7rem;
-  --navbar-max-width: 120rem;
+  --navbar-max-width: var(--container-max-width);
 
 
   /* COMMON COMPONENTS */
