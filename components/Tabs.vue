@@ -69,6 +69,11 @@ $highlight-selector: ".menu__highlight";
       }
     }
     &__item {
+      border-bottom: calc( #{$highlight-height} / 2 ) solid var(--color-contrast-medium);
+      @media screen and (min-width: $laptop) {
+        border-bottom: none;
+        border-left: calc( #{$highlight-height} / 2 ) solid var(--color-contrast-medium);
+      }
       &.is-active {
         .menu__link {
           color: var(--color-primary);

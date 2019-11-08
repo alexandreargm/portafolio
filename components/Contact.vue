@@ -26,7 +26,7 @@
         </div>
         <div class="buttons__button">
           <a href="mailto:+34653020231" role="button" class="button text--m text--color-primary">
-            LLamar 653 020 231
+            Llamar 653 020 231
           </a>
         </div>
       </div>

@@ -15,7 +15,7 @@
           Me dedico al desarrollo de aplicaciones web modernas, atractivas, y con una experiencia de usuario excelente.
         </p>
         <p class="about-me__description text--l">
-          Estas son algunas de las tecnologías que he usado ultimamente:
+          Estas son algunas de las tecnologías con las que he estado trabajado últimamente:
         </p>
         <ul class="skills-list about-me__skills-list text--m">
           <li class="skills-list__item">
