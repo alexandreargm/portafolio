@@ -31,9 +31,6 @@
   }
   &__wrapper {
     padding-top: 4rem;
-    @media screen and (min-width: $tablet-portrait) {
-      @include indent-container-left(1, var(--column-count), var(--container-padding));
-    }
   }
   &__hello {
     margin-bottom: 1.4rem;

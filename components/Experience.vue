@@ -118,25 +118,17 @@ export default {
 .experience {
   display: flex;
   align-items: center;
-  @media screen and (min-width: $tablet-portrait){
-    padding-top: 0;
-  }
-  &__wrapper {
-    @media screen and (min-width: $tablet-portrait) {
-      @include indent-container-left(1, var(--column-count), var(--container-padding));
-    }
-  }
   &__title {
     margin-bottom: 1.3em;
   }
   &__tabs {
     .job {
       margin-bottom: 4em;
+      @media screen and (min-width: $laptop) {
+        @include indent(1, var(--column-count), var(--container-max-width));
+      }
       &__header {
         margin-bottom: 2em;
-      }
-      @media screen and (min-width: $laptop) {
-        @include indent-container-left(1, var(--column-count), var(--container-padding));
       }
     }
     .task-list {

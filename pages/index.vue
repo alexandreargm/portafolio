@@ -36,6 +36,9 @@ export default {
 <style scoped lang="scss">
 /* index.vue */
 
+$section-y-padding: 8rem;
+$section-bottom-margin: 12rem;
+
 .siteframe {
   display: flex;
   flex-direction: column;
@@ -61,28 +64,34 @@ export default {
 .main {
   &__herolanding {
     min-height: 100vh;
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+    padding-top: $section-y-padding;
+    padding-bottom: $section-y-padding;
+    @media screen and (min-width: $tablet-portrait) {
+        @include indent(1, var(--column-count), var(--container-max-width), var(--container-padding));
+    }
     @media screen and (min-width: $laptop ) {
       min-height: calc(100vh - var(--navbar-height) );
-      padding: 0;
-      margin-bottom: 12rem;
+      margin-bottom: $section-bottom-margin;
     }
   }
   &__about-me {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+    padding-top: $section-y-padding;
+    padding-bottom: $section-y-padding;
+    @media screen and (min-width: $tablet-portrait) {
+        @include indent(1, var(--column-count), var(--container-max-width), var(--container-padding));
+    }
     @media screen and (min-width: $laptop ) {
-      padding: 0;
-      margin-bottom: 12rem;
+      margin-bottom: $section-bottom-margin;
     }
   }
   &__experience {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+    padding-top: $section-y-padding;
+    padding-bottom: $section-y-padding;
+    @media screen and (min-width: $tablet-portrait) {
+        @include indent(1, var(--column-count), var(--container-max-width), var(--container-padding));
+    }
     @media screen and (min-width: $laptop ) {
-      padding: 0;
-      margin-bottom: 12rem;
+      margin-bottom: $section-bottom-margin;
     }
   }
 }

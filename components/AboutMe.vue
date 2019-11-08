@@ -58,16 +58,10 @@
 .about-me {
   display: flex;
   align-items: center;
-  @media screen and (min-width: $tablet-portrait){
-    padding-top: 0;
-  }
   &__wrapper {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    @media screen and (min-width: $tablet-portrait) {
-      @include indent-container-left(1, var(--column-count), var(--container-padding));
-    }
     @media screen and (min-width: $tablet-landscape ) {
       flex-direction: row;
     }
