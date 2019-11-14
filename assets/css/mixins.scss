@@ -1,6 +1,6 @@
 /// Mixin that indents an element inside a column based grid.
 @mixin indent($indent-count, $column-count, $max-width, $ignore-padding: 0rem) {
-  padding-left: calc( #{$max-width} / #{$column-count} * #{$indent-count} - #{$ignore-padding} );
+  margin-left: calc( #{$max-width} / #{$column-count} * #{$indent-count} - #{$ignore-padding} );
 }
 
 @mixin tabs-highlight($tab-selector, $highlight-selector) {

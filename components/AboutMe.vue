@@ -45,7 +45,7 @@
         </ul>
       </div>
       <div class="photo about-me__media">
-        <img src="/foto_perfil.jpg" alt="Foto de perfil" class="photo__image">
+        <img src="/foto_perfil_bn.jpg" alt="Foto de perfil" class="photo__image">
       </div>
     </div>
   </section>
@@ -86,8 +86,10 @@
     }
   }
   &__media {
+    position: relative;
     display: flex;
     height: 100%;
+    max-width: 30rem;
     justify-content: center;
     margin-top: 4rem;
     @media screen and (min-width: $tablet-portrait) {
@@ -101,9 +103,30 @@
     @media screen and (min-width: $laptop) {
       @include indent(1, var(--column-count), $laptop-rem);
     }
+    &::before, &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+    @supports (mix-blend-mode: lighten) {
+      &::before {
+        background-color: #0b1e63;
+        mix-blend-mode: lighten;
+      }
+    }
+    @supports (mix-blend-mode: darken) {
+      &::after {
+        background-color: #c7ad66;
+        mix-blend-mode: darken;
+      }
+    }
     .photo {
       &__image {
-        max-width: 30rem;
         border-radius: 0.2rem;
         width: 100%;
         height: auto;
