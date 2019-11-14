@@ -15,7 +15,7 @@
           Me dedico al desarrollo de aplicaciones web modernas, atractivas, y con una experiencia de usuario excelente.
         </p>
         <p class="about-me__description text--l">
-          Estas son algunas de las tecnologías con las que he estado trabajado últimamente:
+          Estas son algunas de las tecnologías con las que he estado trabajando últimamente:
         </p>
         <ul class="skills-list about-me__skills-list text--m">
           <li class="skills-list__item">
@@ -101,7 +101,7 @@
       @include indent(1, var(--column-count), $tablet-landscape-rem);
     }
     @media screen and (min-width: $laptop) {
-      @include indent(1, var(--column-count), $laptop-rem);
+      @include indent(2, var(--column-count), $laptop-rem);
     }
     &::before, &::after {
       content: "";

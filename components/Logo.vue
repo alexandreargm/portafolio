@@ -9,7 +9,7 @@
   </a>
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
 .logo {
   &__svg {
     height: 4rem;

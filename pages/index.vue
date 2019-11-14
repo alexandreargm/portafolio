@@ -13,6 +13,8 @@
       <Experience class="main__experience" />
       <Contact class="main__contact" />
     </main>
+    <!-- footer -->
+    <Footer class="siteframe__footer" />
   </div>
 </template>
 
@@ -23,6 +25,7 @@ import HeroLanding from '~/components/HeroLanding.vue'
 import AboutMe from '~/components/AboutMe.vue'
 import Experience from '~/components/Experience.vue'
 import Contact from '~/components/Contact.vue'
+import Footer from '~/components/Footer.vue'
 
 export default {
   components: {
@@ -31,7 +34,8 @@ export default {
     HeroLanding,
     AboutMe,
     Experience,
-    Contact
+    Contact,
+    Footer
   }
 }
 </script>
@@ -121,6 +125,18 @@ $section-bottom-margin: 12rem;
       @include indent(3, var(--column-count), $laptop-rem, var(--container-padding));
       margin-bottom: $section-bottom-margin;
     }
+  }
+}
+
+.footer {
+  @media screen and (min-width: $mobile-landscape) {
+      @include indent(2, var(--column-count), $mobile-landscape-rem, var(--container-padding));
+  }
+  @media screen and (min-width: $tablet-portrait) {
+      @include indent(3, var(--column-count), $tablet-portrait-rem, var(--container-padding));
+  }
+  @media screen and (min-width: $laptop ) {
+    @include indent(3, var(--column-count), $laptop-rem, var(--container-padding));
   }
 }
 
