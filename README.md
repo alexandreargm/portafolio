@@ -1,4 +1,4 @@
-# portafolio
+# Página personal portafolio
 
 > Página personal creada con Nuxt.js
 
