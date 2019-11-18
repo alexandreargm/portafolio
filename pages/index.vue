@@ -105,7 +105,7 @@ $section-bottom-margin: 12rem;
   transition: all 0.3s ease;
   &--reduced {
     height: var(--navbar-height-reduced);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   }
   &--hidden {
     transform: translate3d(0, -100%, 0);
