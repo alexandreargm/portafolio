@@ -1,6 +1,6 @@
 <!-- Contact.vue -->
 <template>
-  <section class="contact">
+  <section id="contacto" class="contact">
     <div class="contact__wrapper container">
       <div class="contact__head">
         <h1 class="contact__title text--h1">

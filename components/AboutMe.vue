@@ -1,6 +1,6 @@
 <!-- AboutMe.vue -->
 <template>
-  <section class="about-me">
+  <section id="sobre-mi" class="about-me">
     <div class="about-me__wrapper container">
       <div class="about-me__head">
         <h1 class="about-me__title text--h1">

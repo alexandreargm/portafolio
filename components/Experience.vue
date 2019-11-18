@@ -1,6 +1,6 @@
 <!-- AboutMe.vue -->
 <template>
-  <section class="experience">
+  <section id="experiencia" class="experience">
     <div class="experience__wrapper container">
       <h1 class="experience__title text--h1">
         Experiencia
