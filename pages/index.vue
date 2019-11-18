@@ -61,11 +61,13 @@ export default {
       if (currentScrollPosition < 0) {
         return
       }
-      // Here we determine whether we need to show or hide the navbar
-      this.showHeader = currentScrollPosition < this.lastScrollPosition
-      // Here we determine whether the navbar should be reduced
       this.reducedHeader = currentScrollPosition > 0
-      // Set the current scroll position as the last scroll position
+      // Stop executing this function if the difference between
+      // current scroll position and last scroll position is less than some offset
+      if (Math.abs(currentScrollPosition - this.lastScrollPosition) < 80) {
+        return
+      }
+      this.showHeader = currentScrollPosition < this.lastScrollPosition
       this.lastScrollPosition = currentScrollPosition
     }
   }

@@ -92,8 +92,12 @@
     max-width: 30rem;
     justify-content: center;
     margin-top: 4rem;
+    margin-left: auto;
+    margin-right: auto;
     @media screen and (min-width: $tablet-portrait) {
       justify-content: left;
+      margin-left: 0;
+      margin-right: 0;
       @include indent(1, var(--column-count), $tablet-portrait-rem);
     }
     @media screen and (min-width: $tablet-landscape) {
