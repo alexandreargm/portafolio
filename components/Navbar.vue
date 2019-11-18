@@ -35,10 +35,8 @@ export default {
 /* Navbar.vue */
 .navbar {
   display: flex;
-  height: var(--navbar-height);
   flex: 1 100%;
   align-items: center;
-  background-color: var(--color-bg);
 }
 .logo {
   flex: 0 0 auto;
