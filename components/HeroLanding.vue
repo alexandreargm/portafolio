@@ -14,7 +14,7 @@
       <p class="herolanding__description text--l">
         Soy un Desarrollador Web con estancia en Torrevieja, Alicante que crea aplicaciones web modernas, atractivas, y con una experiencia de usuario excelente.
       </p>
-      <a href="#" role="button" class="herolanding__call-to-action button button--big text--l text--color-primary">
+      <a href="#contacto" role="button" class="herolanding__call-to-action button button--big text--l text--color-primary">
         Contactar
       </a>
     </div>
