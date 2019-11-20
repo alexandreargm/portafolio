@@ -51,7 +51,9 @@
   }
   &__description {
     max-width: 26em;
-    margin-bottom: 8rem;
+  }
+  &__call-to-action {
+    margin-top: 8rem;
   }
 }
 
