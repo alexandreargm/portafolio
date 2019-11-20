@@ -12,6 +12,11 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+::selection {
+  color: var(--color-contrast-high);
+  background: var(--color-primary);
+}
+
 /*
   DINAMIC THEME
 */
