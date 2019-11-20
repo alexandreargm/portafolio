@@ -109,6 +109,9 @@ html {
   display: inline-block;
   padding: 0.5em 1.5em;
   cursor: pointer;
+  &:hover {
+    background-color: var(--color-contrast-low);
+  }
 }
 .button--big {
   padding: 0.8em 3em;
