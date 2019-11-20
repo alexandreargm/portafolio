@@ -45,7 +45,7 @@
     margin-bottom: 2rem;
   }
   &__buttons {
-    margin-top: 4rem;
+    margin-top: 8rem;
   }
   .buttons {
     &__button {
