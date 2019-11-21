@@ -3,7 +3,7 @@
   <div class="tabs">
     <div class="menu__wrapper">
       <ul class="menu tabs__menu">
-        <li v-for="tab in tabs" :key="tab" :class="{ 'is-active': tab.isActive }" class="menu__item text--m">
+        <li v-for="(tab, idx) in tabs" :key="idx" :class="{ 'is-active': tab.isActive }" class="menu__item text--m">
           <a :href="tab.href" class="menu__link" @click="selectTab(tab)">{{ tab.name }}</a>
         </li>
         <div class="menu__highlight" role="presentation" />
