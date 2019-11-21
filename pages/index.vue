@@ -3,12 +3,7 @@
   <div class="siteframe" data-theme="default">
     <SocialMetaTags />
     <!-- header -->
-    <header
-      class="header siteframe__header"
-      :class="{ 'header--hidden': !showHeader, 'header--reduced': reducedHeader }"
-    >
-      <Navbar class="header__navbar" />
-    </header>
+    <Header class="siteframe__header" />
     <!-- main -->
     <main class="main siteframe__main">
       <HeroLanding class="main__herolanding" />
@@ -23,7 +18,7 @@
 
 <script>
 import SocialMetaTags from '~/components/SocialMetaTags.vue'
-import Navbar from '~/components/Navbar.vue'
+import Header from '~/components/Header.vue'
 import HeroLanding from '~/components/HeroLanding.vue'
 import AboutMe from '~/components/AboutMe.vue'
 import Experience from '~/components/Experience.vue'
@@ -33,43 +28,12 @@ import Footer from '~/components/Footer.vue'
 export default {
   components: {
     SocialMetaTags,
-    Navbar,
+    Header,
     HeroLanding,
     AboutMe,
     Experience,
     Contact,
     Footer
-  },
-  data () {
-    return {
-      showHeader: true,
-      reducedHeader: false,
-      lastScrollPosition: 0
-    }
-  },
-  mounted () {
-    window.addEventListener('scroll', this.onScroll)
-  },
-  beforeDestroy () {
-    window.removeEventListener('scroll', this.onScroll)
-  },
-  methods: {
-    onScroll () {
-      // Get the current scroll position
-      const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop
-      // Because of momentum scrolling on mobiles, we shouldn't continue if it is less than zero
-      if (currentScrollPosition < 0) {
-        return
-      }
-      this.reducedHeader = currentScrollPosition > 0
-      // Stop executing this function if the difference between
-      // current scroll position and last scroll position is less than some offset
-      if (Math.abs(currentScrollPosition - this.lastScrollPosition) < 80) {
-        return
-      }
-      this.showHeader = currentScrollPosition < this.lastScrollPosition
-      this.lastScrollPosition = currentScrollPosition
-    }
   }
 }
 </script>
@@ -90,26 +54,6 @@ $section-bottom-margin: 12rem;
     @media screen and (min-width: $laptop ) {
       margin-top: var(--navbar-height);
     }
-  }
-}
-
-.header  {
-  width: 100%;
-  height: var(--navbar-height);
-  display: flex;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  background-color: var(--color-bg);
-  transition: all 0.3s ease;
-  &--reduced {
-    height: var(--navbar-height-reduced);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-  }
-  &--hidden {
-    transform: translate3d(0, -100%, 0);
-    box-shadow: none;
   }
 }
 
