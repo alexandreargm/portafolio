@@ -21,6 +21,12 @@
   </section>
 </template>
 
+<script>
+export default {
+  name: 'HeroLanding'
+}
+</script>
+
 <style scoped lang="scss">
 /* HeroLanding.vue */
 .herolanding {
