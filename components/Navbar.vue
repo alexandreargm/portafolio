@@ -37,24 +37,28 @@
         </ul>
       </div>
       <div class="menu-toggle">
-        <div
-          class="menu-toggle__button"
-          :class="{ 'menu-toggle--hidden': !showMobileMenu}"
-          @click="toggleMobileMenu"
-        >
-          <svg class="menu-toggle__svg" viewBox="0 0 24 24">
-            <path class="menu-toggle__path" d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" />
-          </svg>
-        </div>
-        <div
-          class="menu-toggle__button"
-          :class="{ 'menu-toggle--hidden': showMobileMenu}"
-          @click="toggleMobileMenu"
-        >
-          <svg class="menu-toggle__svg" viewBox="0 0 24 24">
-            <path class="menu-toggle__path" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
-          </svg>
-        </div>
+        <transition name="menu-toggle">
+          <button
+            v-if="showMobileMenu"
+            key="open"
+            class="menu-toggle__button"
+            @click="toggleMobileMenu"
+          >
+            <svg class="menu-toggle__svg" viewBox="0 0 24 24">
+              <path class="menu-toggle__path" d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" />
+            </svg>
+          </button>
+          <button
+            v-else
+            key="close"
+            class="menu-toggle__button"
+            @click="toggleMobileMenu"
+          >
+            <svg class="menu-toggle__svg" viewBox="0 0 24 24">
+              <path class="menu-toggle__path" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+            </svg>
+          </button>
+        </transition>
       </div>
     </nav>
   </div>
@@ -108,7 +112,8 @@ export default {
 
 <style scoped lang="scss">
 /* Navbar.vue */
-$button-size: 4rem;
+$button-size: 5rem;
+$mobile-transition-speed: 0.2s;
 
 .navbar {
   display: flex;
@@ -148,7 +153,7 @@ $button-size: 4rem;
     margin: 0;
     list-style: none;
     align-items: center;
-    transition: all 0.2s ease-in-out;
+    transition: all $mobile-transition-speed ease-in-out;
     &--hidden {
       transform: translate3d(100%, 0, 0);
     }
@@ -188,7 +193,7 @@ $button-size: 4rem;
     }
     &__item {
       flex: 0 0 auto;
-      margin-bottom: 3rem;
+      margin-bottom: 4rem;
       font-weight: 500;
       white-space: nowrap;
       @media screen and (min-width: $tablet-landscape) {
@@ -206,28 +211,46 @@ $button-size: 4rem;
     }
   }
   .menu-toggle {
-    z-index: 1040;
     position: relative;
+    padding: 0;
     height: $button-size;
     width: $button-size;
-    padding: 0;
-    background: none;
-    outline: none;
-    fill: var(--color-contrast-medium);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     @media screen and (min-width: $tablet-landscape) {
       display: none;
     }
-    &:active {
-      fill: var(--color-primary);
+    &-enter-active {
+      transition: all 0.15s ease-in 0.2s;
+    }
+    &-leave-active {
+      transition: all 0s linear 0.2s;
+    }
+    &-enter, &-leave-to {
+      opacity: 0;
     }
     &__button {
+      z-index: 1040;
+      fill: var(--color-contrast-medium);
+      background: none;
+      outline: none;
       position: absolute;
       top: 0;
       left: 0;
-    }
-    &__svg {
+      padding: 0;
       height: $button-size;
       width: $button-size;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:active {
+        fill: var(--color-primary);
+      }
+    }
+    &__svg {
+      height: 4rem;
+      width: 4rem;
     }
     &--hidden {
       display: none;
