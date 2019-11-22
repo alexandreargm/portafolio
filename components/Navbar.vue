@@ -142,14 +142,15 @@ $button-size: 4rem;
     z-index: 1030;
     height: 100vh;
     display: inline-block;
-    padding: var(--navbar-height) 6rem;
+    padding: var(--navbar-height) 8rem;
     background-color: var(--color-bg);
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
     margin: 0;
     list-style: none;
     align-items: center;
+    transition: all 0.2s ease-in-out;
     &--hidden {
-      display: none;
+      transform: translate3d(100%, 0, 0);
     }
     @media screen and (min-width: $tablet-landscape) {
       display: flex;
@@ -166,8 +167,9 @@ $button-size: 4rem;
       justify-content: flex-end;
       height: 100vh;
       width: 100vw;
+      background-color: rgba(0, 0, 0, 0.2);
       &--hidden {
-        display: none;
+        transform: translate3d(100%, 0, 0);
       }
       @media screen and (min-width: $tablet-landscape) {
         display: flex;
@@ -180,7 +182,6 @@ $button-size: 4rem;
     &__overlay {
       height: 100%;
       width: 100%;
-      background-color: rgba(0, 0, 0, 0.2);
       &--hidden {
         display: none;
       }
