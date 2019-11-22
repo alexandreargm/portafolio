@@ -16,7 +16,8 @@
     "@nuxtjs/axios": "^5.3.6",
     "@nuxtjs/style-resources": "^1.0.0",
     "autoprefixer": "^9.6.5",
-    "nuxt": "^2.10.1"
+    "nuxt": "^2.10.1",
+    "v-scroll-lock": "^1.1.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^1.0.1",
