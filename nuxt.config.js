@@ -53,6 +53,8 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    // Doc: https://github.com/phegman/v-scroll-lock
+    '~/plugins/v-scroll-lock'
   ],
   /*
   ** Nuxt.js dev-modules
