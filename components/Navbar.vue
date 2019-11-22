@@ -9,23 +9,28 @@
       <div
         class="menu__wrapper"
         :class="{ 'menu__wrapper--hidden': !showMobileMenu }"
-        @click="toggleMobileMenu"
       >
+        <div
+          class="menu__overlay"
+          :class="{ 'menu__overlay--hidden': !showMobileMenu }"
+          @click="toggleMobileMenu"
+        />
         <ul
+          v-scroll-lock="showMobileMenu"
           class="menu"
           :class="{ 'menu--hidden': !showMobileMenu }"
         >
           <li class="menu__item">
-            <a href="#sobre-mi" class="menu__link text--m">Sobre mi</a>
+            <a href="#sobre-mi" class="menu__link text--m" @click="toggleMobileMenu">Sobre mi</a>
           </li>
           <li class="menu__item">
-            <a href="#experiencia" class="menu__link text--m">Experiencia</a>
+            <a href="#experiencia" class="menu__link text--m" @click="toggleMobileMenu">Experiencia</a>
           </li>
           <li class="menu__item">
-            <a href="#contacto" class="menu__link text--m">Contacto</a>
+            <a href="#contacto" class="menu__link text--m" @click="toggleMobileMenu">Contacto</a>
           </li>
           <li class="menu__item">
-            <a href="/cv.pdf" download="CV Alexandre Argibay.pdf" class="menu__download button text--m text--color-primary">
+            <a href="/cv.pdf" download="CV Alexandre Argibay.pdf" class="menu__download button text--m text--color-primary" @click="toggleMobileMenu">
               Descargar CV
             </a>
           </li>
@@ -172,10 +177,18 @@ $button-size: 4rem;
         width: auto;
       }
     }
+    &__overlay {
+      height: 100%;
+      width: 100%;
+      &--hidden {
+        display: none;
+      }
+    }
     &__item {
       flex: 0 0 auto;
       margin-bottom: 3rem;
       font-weight: 500;
+      white-space: nowrap;
       @media screen and (min-width: $tablet-landscape) {
         margin-bottom: 0;
         margin-right: 5rem;
