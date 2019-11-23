@@ -86,6 +86,15 @@ export default {
     ** You can extend webpack config here
     */
     extend (config, ctx) {
+    },
+    postcss: {
+      syntax: 'postcss-scss',
+      plugins: {
+        'postcss-import': {},
+        'postcss-preset-env': {},
+        'postcss-css-variables': { preserve: 'computed' },
+        'cssnano': { preset: 'default' } // Disabled in default
+      }
     }
   }
 }
