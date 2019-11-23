@@ -174,14 +174,15 @@ $mobile-transition-speed: 0.2s;
       width: 100vw;
       background-color: rgba(0, 0, 0, 0.2);
       &--hidden {
-        transform: translate3d(500%, 0, 0);
+        transform: translate3d(100%, 0, 0);
       }
       @media screen and (min-width: $tablet-landscape) {
         display: flex;
         position: unset;
         justify-content: flex-start;
         height: auto;
-        width: auto;
+        background: none;
+        transform: translate3d(0, 0, 0);
       }
     }
     &__overlay {
