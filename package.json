@@ -4,6 +4,9 @@
   "description": "Página personal creada con Nuxt.js",
   "author": "Alexandre Argibay Martinez",
   "private": true,
+  "browserslist": [
+    "> 0.5%, last 2 versions, Firefox ESR, not dead"
+  ],
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
@@ -15,14 +18,15 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
     "@nuxtjs/style-resources": "^1.0.0",
-    "autoprefixer": "^9.6.5",
     "nuxt": "^2.10.1",
     "v-scroll-lock": "^1.1.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^1.0.1",
     "@nuxtjs/eslint-module": "^1.0.0",
-    "babel-eslint": "^10.0.1",
+    "autoprefixer": "^9.7.2",
+    "babel-eslint": "^10.0.3",
+    "browserslist": "^4.7.3",
     "eslint": "^6.1.0",
     "eslint-plugin-nuxt": ">=0.4.2",
     "gh-pages": "^2.1.1",
