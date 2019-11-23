@@ -22,13 +22,13 @@
           :class="{ 'menu--hidden': !showMobileMenu }"
         >
           <li class="menu__item">
-            <a href="#sobre-mi" class="menu__link text--m" @click="toggleMobileMenu">Sobre mi</a>
+            <a href="#sobre-mi" class="menu__link text--m" @click="closeMobileMenu">Sobre mi</a>
           </li>
           <li class="menu__item">
-            <a href="#experiencia" class="menu__link text--m" @click="toggleMobileMenu">Experiencia</a>
+            <a href="#experiencia" class="menu__link text--m" @click="closeMobileMenu">Experiencia</a>
           </li>
           <li class="menu__item">
-            <a href="#contacto" class="menu__link text--m" @click="toggleMobileMenu">Contacto</a>
+            <a href="#contacto" class="menu__link text--m" @click="closeMobileMenu">Contacto</a>
           </li>
           <li class="menu__item">
             <a href="/cv.pdf" download="CV Alexandre Argibay.pdf" class="menu__download button text--m text--color-primary" @click="toggleMobileMenu">
@@ -106,6 +106,9 @@ export default {
     },
     toggleMobileMenu () {
       this.showMobileMenu = !this.showMobileMenu
+    },
+    closeMobileMenu () {
+      this.showMobileMenu = false
     }
   }
 }
