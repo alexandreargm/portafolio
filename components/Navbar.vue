@@ -161,6 +161,8 @@ $mobile-transition-speed: 0.2s;
       padding: 0;
       height: 4rem;
       box-shadow: none;
+      margin-left: auto;
+      transform: translate3d(0, 0, 0);
     }
     &__wrapper {
       z-index: 1020;
