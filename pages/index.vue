@@ -59,7 +59,8 @@ $section-bottom-margin: 12rem;
 
 .main {
   &__herolanding {
-    min-height: 100vh;
+    height: 100vh;
+    max-height: 102.4rem;
     padding-top: $section-y-padding;
     padding-bottom: $section-y-padding;
     @media screen and (min-width: $mobile-landscape) {
@@ -120,10 +121,10 @@ $section-bottom-margin: 12rem;
 
 .footer {
   @media screen and (min-width: $mobile-landscape) {
-      @include indent(2, var(--column-count), $mobile-landscape-rem, var(--container-padding));
+      @include indent(1, var(--column-count), $mobile-landscape-rem, var(--container-padding));
   }
   @media screen and (min-width: $tablet-portrait) {
-      @include indent(2, var(--column-count), $tablet-portrait-rem, var(--container-padding));
+      @include indent(1, var(--column-count), $tablet-portrait-rem, var(--container-padding));
   }
   @media screen and (min-width: $laptop ) {
     @include indent(2, var(--column-count), $laptop-rem, var(--container-padding));

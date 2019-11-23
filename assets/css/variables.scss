@@ -71,45 +71,52 @@ $laptop-rem: 120rem; // 1200px
   --column-count: 12;
 }
 
+/*  LAPTOP 1200px  */
+@media (min-width: $laptop ) {
+  :root, [data-theme]  {
+    /* FONT SIZES */
+    --font-size-s: 1.4rem;
+    --font-size-m: 1.6rem;
+    --font-size-l: 1.8rem;
+    --font-size-xl: 2rem;
+    --font-size-h2: 2.4rem;
+    --font-size-h1: 3.6rem;
+    --font-size-title: 6rem;
+  }
+}
+
+/*  TABLET-LANDSCAPE 992px  */
+@media (min-width: $tablet-landscape ) {
+}
+
+/*  TABLET-PORTRAIT 768px  */
+@media screen and (min-width: $tablet-portrait ) {
+  :root, [data-theme]  {
+    /* FONT SIZES */
+    --font-size-s: 1.2rem;
+    --font-size-m: 1.4rem;
+    --font-size-l: 1.6rem;
+    --font-size-xl: 2rem;
+    --font-size-h2: 2.4rem;
+    --font-size-h1: 3.6rem;
+    --font-size-title: 4.6rem;
+  }
+}
+
+/*  MOBILE-LANDSCAPE 480px  */
+@media screen and (min-width: $mobile-landscape ) {
+}
+
 /*  MOBILE-PORTRAIT 374px  */
 @media screen and (min-width: $mobile-portrait ) {
   :root, [data-theme] {
     /* FONT SIZES */
-    --font-size-s: 1.2rem; /* 10px */
+    --font-size-s: 1.2rem;
     --font-size-m: 1.4rem;
     --font-size-l: 1.6rem;
-    --font-size-xl: 2rem;
+    --font-size-xl: 1.8rem;
     --font-size-h2: 2rem;
     --font-size-h1: 2.6rem;
     --font-size-title: 3.6rem;
   }
 }
-  
-  /*  MOBILE-LANDSCAPE 480px  */
-  @media (min-width: $mobile-landscape ) {
-  
-  }
-  
-  /*  TABLET-PORTRAIT 768px  */
-  @media screen and (min-width: $tablet-portrait ) {
-    :root, [data-theme]  {
-      /* FONT SIZES */
-      --font-size-s: 1.4rem; /* 10px */
-      --font-size-m: 1.6rem;
-      --font-size-l: 1.8rem;
-      --font-size-xl: 2rem;
-      --font-size-h2: 2.4rem;
-      --font-size-h1: 3.6rem;
-      --font-size-title: 6rem;
-    }
-  }
-  
-  /*  TABLET-LANDSCAPE 992px  */
-  @media (min-width: $tablet-landscape ) {
-  
-  }
-  
-  /*  LAPTOP 1200px  */
-  @media (min-width: $laptop ) {
-  
-  }
