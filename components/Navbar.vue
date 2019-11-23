@@ -4,7 +4,7 @@
     class="navbar__wrapper"
     :class="{ 'navbar__wrapper--hidden': !showNavbar, 'navbar__wrapper--reduced': reducedNavbar }"
   >
-    <nav class="navbar container">
+    <nav data-theme="default" class="navbar container">
       <Logo class="logo" />
       <div
         class="menu__wrapper"
@@ -18,6 +18,7 @@
         <ul
           v-scroll-lock="showMobileMenu"
           class="menu"
+          data-theme="default"
           :class="{ 'menu--hidden': !showMobileMenu }"
         >
           <li class="menu__item">
@@ -127,7 +128,6 @@ $mobile-transition-speed: 0.2s;
     top: 0;
     left: 0;
     z-index: 10;
-    background-color: var(--color-bg);
     transition: all 0.3s ease;
     &--reduced {
       height: var(--navbar-height-reduced);
@@ -148,7 +148,6 @@ $mobile-transition-speed: 0.2s;
     height: 100vh;
     display: inline-block;
     padding: var(--navbar-height) 8rem;
-    background-color: var(--color-bg);
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
     margin: 0;
     list-style: none;
