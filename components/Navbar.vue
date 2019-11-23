@@ -222,10 +222,10 @@ $mobile-transition-speed: 0.2s;
       display: none;
     }
     &-enter-active {
-      transition: all 0.15s ease-in 0.2s;
+      transition: all 0.15s ease-in $mobile-transition-speed;
     }
     &-leave-active {
-      transition: all 0s linear 0.2s;
+      transition: all 0s linear $mobile-transition-speed;
     }
     &-enter, &-leave-to {
       opacity: 0;
