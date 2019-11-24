@@ -3,8 +3,8 @@
 @font-face {
   font-display: swap;
   font-family: "Public Sans";
-  src:  url("~assets/fonts/publicsans/PublicSans-Bold.woff") format("woff"),
-        url("~assets/fonts/publicsans/PublicSans-Bold.woff") format("woff2");
+  src:  url("~static/fonts/publicsans/PublicSans-Bold.woff") format("woff"),
+        url("~static/fonts/publicsans/PublicSans-Bold.woff") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
@@ -15,8 +15,8 @@
   font-style: normal;
   font-weight: 400;
   src: local('Roboto'), local('Roboto-Regular'),
-       url('../fonts/roboto/roboto-v20-latin-regular.woff2') format('woff2'), 
-       url('../fonts/roboto/roboto-v20-latin-regular.woff') format('woff');
+       url('~static/fonts/roboto/roboto-v20-latin-regular.woff2') format('woff2'), 
+       url('~static/fonts/roboto/roboto-v20-latin-regular.woff') format('woff');
 }
 @font-face {
   font-display: fallback;
@@ -24,6 +24,6 @@
   font-style: normal;
   font-weight: 500;
   src: local('Roboto Medium'), local('Roboto-Medium'),
-       url('../fonts/roboto/roboto-v20-latin-500.woff2') format('woff2'),
-       url('../fonts/roboto/roboto-v20-latin-500.woff') format('woff');
+       url('~static/fonts/roboto/roboto-v20-latin-500.woff2') format('woff2'),
+       url('~static/fonts/roboto/roboto-v20-latin-500.woff') format('woff');
 }
