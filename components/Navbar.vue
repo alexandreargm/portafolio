@@ -22,16 +22,16 @@
           :class="{ 'menu--hidden': !showMobileMenu }"
         >
           <li class="menu__item">
-            <a href="#sobre-mi" class="menu__link text--m" @click="closeMobileMenu">Sobre mi</a>
+            <a href="#sobre-mi" class="menu__link text--m" @click="closeMobileMenu(), hideNavbar()">Sobre mi</a>
           </li>
           <li class="menu__item">
-            <a href="#experiencia" class="menu__link text--m" @click="closeMobileMenu">Experiencia</a>
+            <a href="#experiencia" class="menu__link text--m" @click="closeMobileMenu(), hideNavbar()">Experiencia</a>
           </li>
           <li class="menu__item">
-            <a href="#contacto" class="menu__link text--m" @click="closeMobileMenu">Contacto</a>
+            <a href="#contacto" class="menu__link text--m" @click="closeMobileMenu(), hideNavbar()">Contacto</a>
           </li>
           <li class="menu__item">
-            <a href="/cv.pdf" download="CV Alexandre Argibay.pdf" class="menu__download button text--m text--color-primary" @click="toggleMobileMenu">
+            <a href="/cv.pdf" download="CV Alexandre Argibay.pdf" class="menu__download button text--m text--color-primary" @click="closeMobileMenu(), hideNavbar()">
               Descargar CV
             </a>
           </li>
@@ -109,6 +109,10 @@ export default {
     },
     closeMobileMenu () {
       this.showMobileMenu = false
+    },
+    hideNavbar () {
+      this.showNavbar = false
+      this.lastScrollPosition = 0 // Prevent navbar from showing
     }
   }
 }
