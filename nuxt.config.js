@@ -77,8 +77,6 @@ export default {
     '@nuxtjs/axios',
     // Doc: https://github.com/nuxt-community/style-resources-module
     '@nuxtjs/style-resources',
-    // Doc: https://github.com/arash16/nuxt-ssr-cache
-    'nuxt-ssr-cache',
   ],
   /*
   ** Axios module configuration
