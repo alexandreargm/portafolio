@@ -2,7 +2,7 @@
 <template>
   <footer class="footer">
     <div class="footer__wrapper container">
-      <a href="https://github.com/alexandreargm/portafolio" target="_blank" class="footer__link text--s">
+      <a href="https://github.com/alexandreargm/portafolio" target="_blank" rel="noreferrer" class="footer__link text--s">
         <div class="footer__link-content">
           Creado por Alexandre Argibay
           <svg class="logo footer__logo" height="16" viewBox="0 0 16 16" version="1.1" width="16">
