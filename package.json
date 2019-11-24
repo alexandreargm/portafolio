@@ -29,7 +29,6 @@
     "eslint-plugin-nuxt": ">=0.4.2",
     "gh-pages": "^2.1.1",
     "node-sass": "^4.12.0",
-    "nuxt-ssr-cache": "^1.5.1",
     "postcss-css-variables": "^0.13.0",
     "postcss-scss": "^2.0.0",
     "push-dir": "^0.4.1",
