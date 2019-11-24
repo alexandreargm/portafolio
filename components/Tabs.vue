@@ -6,7 +6,7 @@
         <li v-for="(tab, idx) in tabs" :key="idx" :class="{ 'is-active': tab.isActive }" class="menu__item text--m">
           <a :href="tab.href" class="menu__link" @click="selectTab(tab)">{{ tab.name }}</a>
         </li>
-        <div class="menu__highlight" role="presentation" />
+        <li class="menu__highlight" aria-hidden="true" role="presentation" />
       </ul>
     </div>
     <div class="tabs__content text--l">
