@@ -5,7 +5,14 @@
     :class="{ 'navbar__wrapper--hidden': !showNavbar, 'navbar__wrapper--reduced': reducedNavbar }"
   >
     <nav data-theme="default" class="navbar container">
-      <Logo class="logo" />
+      <transition
+        appear
+        appear-class="logo-appear-class"
+        appear-to-class="logo-appear-to-class"
+        appear-active-class="logo-active-class"
+      >
+        <Logo class="logo" />
+      </transition>
       <div
         class="menu__wrapper"
         :class="{ 'menu__wrapper--hidden': !showMobileMenu }"
@@ -149,6 +156,15 @@ $mobile-transition-speed: 0.2s;
     flex: 0 0 auto;
     width: auto;
     margin-right: auto;
+    &-active-class {
+      transition: all 1s;
+    }
+    &-appear-class {
+      opacity: 0;
+    }
+    &-appear-to-class {
+      opacity: 1;
+    }
   }
   .menu {
     z-index: 1030;
