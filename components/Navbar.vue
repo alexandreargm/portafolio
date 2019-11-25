@@ -14,6 +14,7 @@
         <Logo class="logo" />
       </transition>
       <div
+        appear
         class="menu__wrapper"
         :class="{ 'menu__wrapper--hidden': !showMobileMenu }"
       >
@@ -157,13 +158,13 @@ $mobile-transition-speed: 0.2s;
     width: auto;
     margin-right: auto;
     &-active-class {
-      transition: all 1s;
+      transition: all 2s;
     }
     &-appear-class {
-      opacity: 0;
+      opacity: 1;
     }
     &-appear-to-class {
-      opacity: 1;
+      opacity: 0;
     }
   }
   .menu {
