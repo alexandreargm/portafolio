@@ -5,12 +5,7 @@
     :class="{ 'navbar__wrapper--hidden': !showNavbar, 'navbar__wrapper--reduced': reducedNavbar }"
   >
     <nav data-theme="default" class="navbar container">
-      <transition
-        appear
-        appear-class="logo-appear-class"
-        appear-to-class="logo-appear-to-class"
-        appear-active-class="logo-active-class"
-      >
+      <transition name="logo" appear>
         <Logo class="logo" />
       </transition>
       <div
@@ -157,14 +152,14 @@ $mobile-transition-speed: 0.2s;
     flex: 0 0 auto;
     width: auto;
     margin-right: auto;
-    &-active-class {
-      transition: all 2s;
-    }
     &-appear-class {
-      opacity: 1;
+      opacity: 0;
     }
     &-appear-to-class {
-      opacity: 0;
+      opacity: 1;
+    }
+    &-appear-active-class {
+      transition: all 2s;
     }
   }
   .menu {
