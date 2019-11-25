@@ -122,3 +122,15 @@ html {
 .button--big {
   padding: 0.8em 3em;
 }
+
+/* 
+  UI ANIMATIONS
+*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
