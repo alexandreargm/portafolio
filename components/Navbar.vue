@@ -5,7 +5,12 @@
     :class="{ 'navbar__wrapper--hidden': !showNavbar, 'navbar__wrapper--reduced': reducedNavbar }"
   >
     <nav data-theme="default" class="navbar container">
-      <transition name="logo" appear>
+      <transition
+        appear
+        appear-class="logo-appear"
+        appear-to-class="logo-appear-to"
+        enter-active-class="logo-appear-active"
+      >
         <Logo class="logo" />
       </transition>
       <div
@@ -152,14 +157,11 @@ $mobile-transition-speed: 0.2s;
     flex: 0 0 auto;
     width: auto;
     margin-right: auto;
-    &-appear-class {
-      opacity: 0;
+    &-appear-active {
+      animation-duration: 2s;
     }
-    &-appear-to-class {
-      opacity: 1;
-    }
-    &-appear-active-class {
-      transition: all 2s;
+    &-appear-to {
+      animation-name: fadeIn;
     }
   }
   .menu {
