@@ -72,6 +72,7 @@ $section-bottom-margin: 12rem;
     @media screen and (min-width: $laptop ) {
       @include indent(2, var(--column-count), $laptop-rem, var(--container-padding));
       min-height: calc(100vh - var(--navbar-height) );
+      padding-top: 0;
       margin-bottom: $section-bottom-margin;
     }
   }
