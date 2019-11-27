@@ -5,16 +5,8 @@
     :class="{ 'navbar__wrapper--hidden': !showNavbar, 'navbar__wrapper--reduced': reducedNavbar }"
   >
     <nav data-theme="default" class="navbar container">
-      <transition
-        appear
-        appear-class="logo-appear"
-        appear-to-class="logo-appear-to"
-        enter-active-class="logo-appear-active"
-      >
-        <Logo class="logo" />
-      </transition>
+      <Logo class="logo animated-long fade-in" />
       <div
-        appear
         class="menu__wrapper"
         :class="{ 'menu__wrapper--hidden': !showMobileMenu }"
       >
@@ -45,7 +37,7 @@
           </li>
         </ul>
       </div>
-      <div class="menu-toggle">
+      <div class="menu-toggle animated-long fade-in">
         <transition name="menu-toggle">
           <button
             v-if="showMobileMenu"
@@ -159,6 +151,9 @@ $mobile-transition-speed: 0.2s;
     margin-right: auto;
     &-appear-active {
       animation-duration: 2s;
+    }
+    &-appear {
+      opacity: 0;
     }
     &-appear-to {
       animation-name: fadeIn;

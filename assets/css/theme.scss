@@ -126,6 +126,19 @@ html {
 /* 
   UI ANIMATIONS
 */
+.animated-short {
+  animation-duration: 0.5s;
+}
+.animated {
+  animation-duration: 1s;
+}
+.animated-long {
+  animation-duration: 2s;
+}
+.fade-in {
+  animation-name: fadeIn;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
