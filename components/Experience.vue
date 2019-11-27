@@ -36,18 +36,15 @@
                 Desarrollo web y Diseño <span class="text--color-primary">en Intersys IT</span>
               </h2>
               <p class="job__when text--m">
-                Septiembre 2018, Londres, Reino Unido
+                Agosto - septiembre 2018, Londres, Reino Unido
               </p>
             </div>
             <ul class="task-list job__task-list">
               <li class="task-list__item">
-                Diseño, desarrollo y mantenimiento de la página web de empresa y tienda e-commerce con las tecnologías WordPress y PrestaShop.
+                Diseño y desarrollo de tienda de comercio electrónico con el gestor de contenido Joomla y con el módulo de tienda Virtuemart
               </li>
               <li class="task-list__item">
-                Diseño, creación y lanzamiento de campañas de publicidad mediante envio de correo electrónico masivo, publicidad en el lugar de venta, flyers y publicaciones en revistas mensuales de publicidad.
-              </li>
-              <li class="task-list__item">
-                Gestión y optimización de la ficha de empresa en Google My Business.
+                Diseñar y desarrollar módulos para el gestor de contenido Joomla.
               </li>
             </ul>
           </div>
@@ -57,18 +54,18 @@
                 Desarrollo web y Diseño (prácticas) <span class="text--color-primary">en Intersys IT</span>
               </h2>
               <p class="job__when text--m">
-                Mayo 2018 - julio 2018, Londres, Reino Unido
+                Abril - agosto 2018, Londres, Reino Unido
               </p>
             </div>
             <ul class="task-list job__task-list">
               <li class="task-list__item">
-                Diseño, desarrollo y mantenimiento de la página web de empresa y tienda e-commerce con las tecnologías WordPress y PrestaShop.
+                Diseño y desarrollo de tienda de comercio electrónico con el gestor de contenido Joomla y con el módulo de tienda Virtuemart
               </li>
               <li class="task-list__item">
-                Diseño, creación y lanzamiento de campañas de publicidad mediante envio de correo electrónico masivo, publicidad en el lugar de venta, flyers y publicaciones en revistas mensuales de publicidad.
+                Diseñar y desarrollar módulos para el gestor de contenido Joomla.
               </li>
               <li class="task-list__item">
-                Gestión y optimización de la ficha de empresa en Google My Business.
+                Realizar mantenimiento de equipos y redes locales.
               </li>
             </ul>
           </div>
@@ -80,7 +77,7 @@
                 Desarrollo web y Diseño (prácticas) <span class="text--color-primary">en Clínica Virgen del Pilar</span>
               </h2>
               <p class="job__when text--m">
-                Abril 2014 - junio 2014, Torrevieja, España
+                Abril 2014 - agosto 2014, Torrevieja, España
               </p>
             </div>
             <ul class="task-list job__task-list">
