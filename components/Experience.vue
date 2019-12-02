@@ -82,13 +82,10 @@
             </div>
             <ul class="task-list job__task-list">
               <li class="task-list__item">
-                Diseño, desarrollo y mantenimiento de la página web de empresa y tienda e-commerce con las tecnologías WordPress y PrestaShop.
+                Mantenimiento informático y expansión de la red local.
               </li>
               <li class="task-list__item">
-                Diseño, creación y lanzamiento de campañas de publicidad mediante envio de correo electrónico masivo, publicidad en el lugar de venta, flyers y publicaciones en revistas mensuales de publicidad.
-              </li>
-              <li class="task-list__item">
-                Gestión y optimización de la ficha de empresa en Google My Business.
+                Ayudar con el trabajo de oficina.
               </li>
             </ul>
           </div>
