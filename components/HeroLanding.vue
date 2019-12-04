@@ -2,19 +2,19 @@
 <template>
   <section class="herolanding">
     <div class="herolanding__wrapper container">
-      <div class="herolanding__hello text--h2 text--color-primary">
+      <div class="herolanding__hello text--h2 text--color-primary fadein-enterup animation-delay-1200">
         Hola, me llamo
       </div>
-      <h1 class="herolanding__name text--title">
+      <h1 class="herolanding__name text--title fadein-enterup animation-delay-1300">
         Alexandre Argibay.
       </h1>
-      <h2 class="herolanding__role text--title text--color-contrast-medium">
+      <h2 class="herolanding__role text--title text--color-contrast-medium fadein-enterup animation-delay-1400">
         Desarrollo aplicaciones web.
       </h2>
-      <p class="herolanding__description text--l">
+      <p class="herolanding__description text--l fadein-enterup animation-delay-1500">
         Soy un Desarrollador Web con estancia en Torrevieja, Alicante que crea aplicaciones web modernas, atractivas, y con una experiencia de usuario excelente.
       </p>
-      <a href="#contacto" role="button" class="herolanding__call-to-action button button--big text--l text--color-primary">
+      <a href="#contacto" role="button" class="herolanding__call-to-action button button--big text--l text--color-primary fadein-enterup animation-delay-2000">
         Contactar
       </a>
     </div>

@@ -5,7 +5,7 @@
     :class="{ 'navbar__wrapper--hidden': !showNavbar, 'navbar__wrapper--reduced': reducedNavbar }"
   >
     <nav data-theme="default" class="navbar container">
-      <Logo class="logo animated-long fade-in" />
+      <Logo class="logo fade-in animation-duration-1100" />
       <div
         class="menu__wrapper"
         :class="{ 'menu__wrapper--hidden': !showMobileMenu }"
@@ -21,23 +21,23 @@
           data-theme="default"
           :class="{ 'menu--hidden': !showMobileMenu }"
         >
-          <li class="menu__item">
+          <li class="menu__item fadein-enterdown animation-duration-300">
             <a href="#sobre-mi" class="menu__link text--m" @click="closeMobileMenu(), hideNavbar()">Sobre mi</a>
           </li>
-          <li class="menu__item">
+          <li class="menu__item fadein-enterdown animation-duration-300 animation-delay-100">
             <a href="#experiencia" class="menu__link text--m" @click="closeMobileMenu(), hideNavbar()">Experiencia</a>
           </li>
-          <li class="menu__item">
+          <li class="menu__item fadein-enterdown animation-duration-300 animation-delay-200">
             <a href="#contacto" class="menu__link text--m" @click="closeMobileMenu(), hideNavbar()">Contacto</a>
           </li>
-          <li class="menu__item">
+          <li class="menu__item fadein-enterdown animation-duration-400 animation-delay-500">
             <a href="/cv.pdf" download="CV Alexandre Argibay.pdf" class="menu__download button text--m text--color-primary" @click="closeMobileMenu(), hideNavbar()">
               Descargar CV
             </a>
           </li>
         </ul>
       </div>
-      <div class="menu-toggle animated-long fade-in">
+      <div class="menu-toggle fade-in animation-duration-1100">
         <transition name="menu-toggle">
           <button
             v-if="showMobileMenu"
@@ -149,15 +149,6 @@ $mobile-transition-speed: 0.2s;
     flex: 0 0 auto;
     width: auto;
     margin-right: auto;
-    &-appear-active {
-      animation-duration: 2s;
-    }
-    &-appear {
-      opacity: 0;
-    }
-    &-appear-to {
-      animation-name: fadeIn;
-    }
   }
   .menu {
     z-index: 1030;
