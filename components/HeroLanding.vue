@@ -29,7 +29,10 @@ export default {
 
 <style scoped lang="scss">
 /* HeroLanding.vue */
+$herolanding-enter-delay: 500;
+$herolanding-desktop-enter-delay: 1100;
 $herolanding-element-count: 5;
+
 .herolanding {
   display: flex;
   align-items: center;
@@ -40,7 +43,20 @@ $herolanding-element-count: 5;
     padding-top: 4rem;
     @for $i from 0 through $herolanding-element-count {
       & :nth-child(#{$i}) {
-        @include animation((fadeIn,enterUp), 300ms, #{$i * 100}ms);
+        @include animation((fadeIn,enterUp), 300ms, #{$i * 100 + $herolanding-enter-delay}ms);
+      }
+    }
+    & :last-child {
+      @include animation((fadeIn,enterUp), 400ms, #{ 200 + $herolanding-element-count * 100 + $herolanding-enter-delay}ms);
+    }
+    @media screen and (min-width: $tablet-landscape){
+      @for $i from 0 through $herolanding-element-count {
+        & :nth-child(#{$i}) {
+          @include animation((fadeIn,enterUp), 300ms, #{$i * 100 + $herolanding-desktop-enter-delay}ms);
+        }
+      }
+      & :last-child {
+        @include animation((fadeIn,enterUp), 400ms, #{ 200 + $herolanding-element-count * 100 + $herolanding-desktop-enter-delay}ms);
       }
     }
   }

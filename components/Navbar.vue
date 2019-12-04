@@ -153,7 +153,7 @@ $menu-enter-delay: 1500;
     margin-right: auto;
     @include animation(fadeIn);
     @media screen {
-      @include animation(fadeIn, 300ms, #{$menu-enter-delay}ms);
+      @include animation(fadeIn, 1000ms);
     }
   }
   .menu {
@@ -163,9 +163,10 @@ $menu-enter-delay: 1500;
     padding: var(--navbar-height) 8rem;
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
     margin: 0;
+    margin-left: auto;
     list-style: none;
     align-items: center;
-    transition: all $mobile-transition-speed ease-in-out;
+    transition: transform $mobile-transition-speed ease-in-out;
     &--hidden {
       transform: translate3d(100%, 0, 0);
     }
@@ -174,7 +175,6 @@ $menu-enter-delay: 1500;
       padding: 0;
       height: 4rem;
       box-shadow: none;
-      margin-left: auto;
       transform: translate3d(0, 0, 0);
     }
     &__wrapper {
@@ -213,10 +213,7 @@ $menu-enter-delay: 1500;
       white-space: nowrap;
       @media screen and (min-width: $tablet-landscape) {
         margin-bottom: 0;
-        margin-right: 5rem;
-      }
-      &:last-of-type {
-        margin: 0 !important;
+        margin-left: 5rem;
       }
     }
     &__link {
@@ -225,17 +222,20 @@ $menu-enter-delay: 1500;
       }
     }
     .menu__item {
-      @for $i from 0 through $menu-item-count {
-        &:nth-child(#{$i}) {
-          @include animation((fadeIn, enterDown), 200ms, #{$i * 100 + $menu-enter-delay}ms);
+      @media screen and (min-width: $tablet-landscape) {
+        @for $i from 0 through $menu-item-count {
+          &:nth-child(#{$i}) {
+            @include animation((fadeIn, enterDown), 300ms, #{$i * 100}ms);
+          }
         }
-      }
-      &:last-child {
-        @include animation((fadeIn, enterDown), 400ms, #{$menu-enter-delay + 500}ms);
+        &:last-child {
+          @include animation((fadeIn,enterDown), 400ms, #{ 100 + $menu-item-count * 100}ms);
+        }
       }
     }
   }
   .menu-toggle {
+    z-index: 1040;
     position: relative;
     padding: 0;
     height: $button-size;
@@ -243,7 +243,7 @@ $menu-enter-delay: 1500;
     display: flex;
     align-items: center;
     justify-content: center;
-    @include animation(fadeIn, 300ms, #{$menu-enter-delay}ms);
+    @include animation(fadeIn, 600ms);
     @media screen and (min-width: $tablet-landscape) {
       display: none;
     }
@@ -257,7 +257,6 @@ $menu-enter-delay: 1500;
       opacity: 0;
     }
     &__button {
-      z-index: 1040;
       fill: var(--color-contrast-medium);
       background: none;
       outline: none;
