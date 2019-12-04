@@ -43,6 +43,19 @@ $tab-selector: ".menu__item";
 $highlight-height: 0.2rem;
 $highlight-selector: ".menu__highlight";
 
+// Move a highlight element between tabs
+@mixin tabs-highlight($tab-selector, $highlight-selector) {
+@for $i from 1 through $tab-count {
+    #{$tab-selector}:nth-of-type(#{$i}).is-active ~ #{$highlight-selector} {
+      left: #{ $tab-width * ($i - 1) };
+      @media screen and (min-width: $laptop) {
+        left: 0;
+        top: #{ $tab-height * ($i - 1) };
+      }
+    }
+  }
+}
+
 .tabs {
   @media screen and (min-width: $laptop) {
     display: flex;
