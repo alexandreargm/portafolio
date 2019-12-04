@@ -1,16 +1,13 @@
-/// Mixin that indents an element inside a column based grid.
+/// Indent an element inside a column based grid.
 @mixin indent($indent-count, $column-count, $max-width, $ignore-padding: 0rem) {
   margin-left: calc( #{$max-width} / #{$column-count} * #{$indent-count} - #{$ignore-padding} );
 }
 
-@mixin tabs-highlight($tab-selector, $highlight-selector) {
-@for $i from 1 through $tab-count {
-    #{$tab-selector}:nth-of-type(#{$i}).is-active ~ #{$highlight-selector} {
-      left: #{ $tab-width * ($i - 1) };
-      @media screen and (min-width: $laptop) {
-        left: 0;
-        top: #{ $tab-height * ($i - 1) };
-      }
-    }
-  }
+// Animation controller
+@mixin animation($animation, $duration: 300ms, $delay: 0ms, $timing: ease-in-out, $fill-mode: both) {
+  animation-name: $animation !important;
+  animation-duration: $duration !important;
+  animation-delay: $delay !important;
+  animation-timing-function: $timing !important;
+  animation-fill-mode: $fill-mode !important;
 }

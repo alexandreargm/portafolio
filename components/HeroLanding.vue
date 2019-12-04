@@ -14,7 +14,7 @@
       <p class="herolanding__description text--l fadein-enterup animation-delay-1500">
         Soy un Desarrollador Web con estancia en Torrevieja, Alicante que crea aplicaciones web modernas, atractivas, y con una experiencia de usuario excelente.
       </p>
-      <a href="#contacto" role="button" class="herolanding__call-to-action button button--big text--l text--color-primary fadein-enterup animation-delay-2000">
+      <a href="#contacto" role="button" class="herolanding__call-to-action button button--big text--l text--color-primary fadein-enterup animation-delay-1600">
         Contactar
       </a>
     </div>
@@ -29,6 +29,7 @@ export default {
 
 <style scoped lang="scss">
 /* HeroLanding.vue */
+$herolanding-element-count: 5;
 .herolanding {
   display: flex;
   align-items: center;
@@ -37,6 +38,11 @@ export default {
   }
   &__wrapper {
     padding-top: 4rem;
+    @for $i from 0 through $herolanding-element-count {
+      & :nth-child(#{$i}) {
+        @include animation((fadeIn,enterUp), 300ms, #{$i * 100}ms);
+      }
+    }
   }
   &__hello {
     margin-bottom: 1.4rem;

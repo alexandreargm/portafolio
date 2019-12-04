@@ -5,7 +5,7 @@
     :class="{ 'navbar__wrapper--hidden': !showNavbar, 'navbar__wrapper--reduced': reducedNavbar }"
   >
     <nav data-theme="default" class="navbar container">
-      <Logo class="logo fade-in animation-duration-1100" />
+      <Logo class="logo" />
       <div
         class="menu__wrapper"
         :class="{ 'menu__wrapper--hidden': !showMobileMenu }"
@@ -21,23 +21,23 @@
           data-theme="default"
           :class="{ 'menu--hidden': !showMobileMenu }"
         >
-          <li class="menu__item fadein-enterdown animation-duration-300">
+          <li class="menu__item">
             <a href="#sobre-mi" class="menu__link text--m" @click="closeMobileMenu(), hideNavbar()">Sobre mi</a>
           </li>
-          <li class="menu__item fadein-enterdown animation-duration-300 animation-delay-100">
+          <li class="menu__item">
             <a href="#experiencia" class="menu__link text--m" @click="closeMobileMenu(), hideNavbar()">Experiencia</a>
           </li>
-          <li class="menu__item fadein-enterdown animation-duration-300 animation-delay-200">
+          <li class="menu__item">
             <a href="#contacto" class="menu__link text--m" @click="closeMobileMenu(), hideNavbar()">Contacto</a>
           </li>
-          <li class="menu__item fadein-enterdown animation-duration-400 animation-delay-500">
+          <li class="menu__item">
             <a href="/cv.pdf" download="CV Alexandre Argibay.pdf" class="menu__download button text--m text--color-primary" @click="closeMobileMenu(), hideNavbar()">
               Descargar CV
             </a>
           </li>
         </ul>
       </div>
-      <div class="menu-toggle fade-in animation-duration-1100">
+      <div class="menu-toggle">
         <transition name="menu-toggle">
           <button
             v-if="showMobileMenu"
@@ -122,6 +122,8 @@ export default {
 /* Navbar.vue */
 $button-size: 5rem;
 $mobile-transition-speed: 0.2s;
+$menu-item-count: 4;
+$menu-enter-delay: 1500;
 
 .navbar {
   display: flex;
@@ -149,6 +151,10 @@ $mobile-transition-speed: 0.2s;
     flex: 0 0 auto;
     width: auto;
     margin-right: auto;
+    @include animation(fadeIn);
+    @media screen {
+      @include animation(fadeIn, 300ms, #{$menu-enter-delay}ms);
+    }
   }
   .menu {
     z-index: 1030;
@@ -218,6 +224,16 @@ $mobile-transition-speed: 0.2s;
         color: var(--color-primary);
       }
     }
+    .menu__item {
+      @for $i from 0 through $menu-item-count {
+        &:nth-child(#{$i}) {
+          @include animation((fadeIn, enterDown), 200ms, #{$i * 100 + $menu-enter-delay}ms);
+        }
+      }
+      &:last-child {
+        @include animation((fadeIn, enterDown), 400ms, #{$menu-enter-delay + 500}ms);
+      }
+    }
   }
   .menu-toggle {
     position: relative;
@@ -227,6 +243,7 @@ $mobile-transition-speed: 0.2s;
     display: flex;
     align-items: center;
     justify-content: center;
+    @include animation(fadeIn, 300ms, #{$menu-enter-delay}ms);
     @media screen and (min-width: $tablet-landscape) {
       display: none;
     }

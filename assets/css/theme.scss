@@ -144,28 +144,8 @@ html {
 }
 
 /* ANIMATIONS */
-$default-animation-duration: 300ms;
-$default-animation-timing: ease-in-out;
-$default-animation-fill-mode: both;
 
-.fade-in {
-  animation-name: fadeIn;
-  animation-duration: $default-animation-duration;
-  animation-timing-function: $default-animation-timing;
-  animation-fill-mode: $default-animation-fill-mode;
-}
-.fadein-enterdown {
-  animation: enterDown, fadeIn;
-  animation-duration: $default-animation-duration;
-  animation-timing-function: $default-animation-timing;
-  animation-fill-mode: $default-animation-fill-mode;
-}
-.fadein-enterup {
-  animation: enterUp, fadeIn;
-  animation-duration: $default-animation-duration;
-  animation-timing-function: $default-animation-timing;
-  animation-fill-mode: $default-animation-fill-mode;
-}
+// "animation" Animation controller inside mixins.scss
 
 @keyframes fadeIn {
   from {
