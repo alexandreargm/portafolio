@@ -1,54 +1,59 @@
 <!-- AboutMe.vue -->
 <template>
-  <section id="sobre-mi" class="about-me">
-    <div class="about-me__wrapper container">
-      <div class="about-me__head">
-        <h1 class="about-me__title text--h1">
-          Sobre mi
-        </h1>
+  <transition
+    appear
+    appear-class="custom-appear-class"
+  >
+    <section id="sobre-mi" class="about-me">
+      <div class="about-me__wrapper container">
+        <div class="about-me__head">
+          <h1 class="about-me__title text--h1">
+            Sobre mi
+          </h1>
+        </div>
+        <div class="about-me__body">
+          <p class="about-me__description text--l">
+            <span class="text--h2">¡Hola!</span> <span class="text--color-contrast-high">Me llamo Alex, soy un Desarrollador Web</span> con estancia <span class="text--color-contrast-high">en Torrevieja, Alicante</span> al que le gusta estar al tanto de las últimas tecnologías de informática y electrónica de consumo.
+          </p>
+          <p class="about-me__description text--l">
+            Me dedico al desarrollo de aplicaciones web modernas, atractivas, y con una experiencia de usuario excelente.
+          </p>
+          <p class="about-me__description text--l">
+            Estas son algunas de las tecnologías con las que he estado trabajando últimamente:
+          </p>
+          <ul class="skills-list about-me__skills-list text--m">
+            <li class="skills-list__item">
+              JavaScript (ES6)
+            </li>
+            <li class="skills-list__item">
+              HTML y (S)CSS
+            </li>
+            <li class="skills-list__item">
+              JQuery
+            </li>
+            <li class="skills-list__item">
+              Node.js
+            </li>
+            <li class="skills-list__item">
+              Vue.js
+            </li>
+            <li class="skills-list__item">
+              Laravel (PHP)
+            </li>
+            <li class="skills-list__item">
+              Java
+            </li>
+            <li class="skills-list__item">
+              SQL
+            </li>
+          </ul>
+        </div>
+        <div class="photo about-me__media">
+          <img src="/foto_perfil_bn.jpg" alt="Foto de perfil" class="photo__image">
+        </div>
       </div>
-      <div class="about-me__body">
-        <p class="about-me__description text--l">
-          <span class="text--h2">¡Hola!</span> <span class="text--color-contrast-high">Me llamo Alex, soy un Desarrollador Web</span> con estancia <span class="text--color-contrast-high">en Torrevieja, Alicante</span> al que le gusta estar al tanto de las últimas tecnologías de informática y electrónica de consumo.
-        </p>
-        <p class="about-me__description text--l">
-          Me dedico al desarrollo de aplicaciones web modernas, atractivas, y con una experiencia de usuario excelente.
-        </p>
-        <p class="about-me__description text--l">
-          Estas son algunas de las tecnologías con las que he estado trabajando últimamente:
-        </p>
-        <ul class="skills-list about-me__skills-list text--m">
-          <li class="skills-list__item">
-            JavaScript (ES6)
-          </li>
-          <li class="skills-list__item">
-            HTML y (S)CSS
-          </li>
-          <li class="skills-list__item">
-            JQuery
-          </li>
-          <li class="skills-list__item">
-            Node.js
-          </li>
-          <li class="skills-list__item">
-            Vue.js
-          </li>
-          <li class="skills-list__item">
-            Laravel (PHP)
-          </li>
-          <li class="skills-list__item">
-            Java
-          </li>
-          <li class="skills-list__item">
-            SQL
-          </li>
-        </ul>
-      </div>
-      <div class="photo about-me__media">
-        <img src="/foto_perfil_bn.jpg" alt="Foto de perfil" class="photo__image">
-      </div>
-    </div>
-  </section>
+    </section>
+  </transition>
 </template>
 
 <style scoped lang="scss">

@@ -79,6 +79,7 @@ $section-bottom-margin: 12rem;
   &__about-me {
     padding-top: $section-y-padding;
     padding-bottom: $section-y-padding;
+    @include animation((fadeIn, enterUp));
     @media screen and (min-width: $mobile-landscape) {
         @include indent(1, var(--column-count), $mobile-landscape-rem, var(--container-padding));
     }
@@ -107,6 +108,7 @@ $section-bottom-margin: 12rem;
   &__contact {
     padding-top: $section-y-padding;
     padding-bottom: $section-y-padding;
+    @include animation((fadeIn, enterUp));
     @media screen and (min-width: $mobile-landscape) {
         @include indent(2, var(--column-count), $mobile-landscape-rem, var(--container-padding));
     }

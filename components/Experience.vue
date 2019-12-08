@@ -114,11 +114,13 @@ export default {
   align-items: center;
   &__title {
     margin-bottom: 1.3em;
+    @include animation((fadeIn, enterUp));
   }
   &__tabs {
     .job {
       max-width: 45em;
       margin-bottom: 4em;
+      animation-duration: 0ms !important;
       @media screen and (min-width: $laptop) {
         @include indent(1, var(--column-count), var(--container-max-width));
       }

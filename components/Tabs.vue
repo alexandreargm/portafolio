@@ -60,6 +60,9 @@ $highlight-selector: ".menu__highlight";
   @media screen and (min-width: $laptop) {
     display: flex;
   }
+  &__content {
+      @include animation((fadeIn, enterUp));
+  }
   .menu {
     list-style: none;
     padding: 0;
@@ -67,6 +70,7 @@ $highlight-selector: ".menu__highlight";
     flex-direction: row;
     flex: 0 0 auto;
     margin: 0;
+    @include animation((fadeIn, enterUp));
     @media screen and (min-width: $laptop) {
       flex-direction: column;
     }
