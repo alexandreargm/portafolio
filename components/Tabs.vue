@@ -61,7 +61,6 @@ $highlight-selector: ".menu__highlight";
     display: flex;
   }
   &__content {
-      @include animation((fadeIn, enterUp));
   }
   .menu {
     list-style: none;

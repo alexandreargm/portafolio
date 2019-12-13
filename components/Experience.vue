@@ -121,6 +121,7 @@ export default {
       max-width: 45em;
       margin-bottom: 4em;
       animation-duration: 0ms !important;
+      @include animation((fadeIn, enterUp));
       @media screen and (min-width: $laptop) {
         @include indent(1, var(--column-count), var(--container-max-width));
       }
