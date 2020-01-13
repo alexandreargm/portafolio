@@ -16,7 +16,7 @@
         <a class="footer__link text--s" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">
           <div class="footer__link-content">
             Este obra está bajo una licencia de Creative Commons Reconocimiento 4.0 Internacional
-            <img class="footer__logo logo" alt="Licencia de Creative Commons" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
+            <img class="footer__logo logo" alt="Licencia de Creative Commons" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png">
           </div>
         </a>
       </div>
