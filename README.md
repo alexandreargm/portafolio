@@ -1,10 +1,13 @@
 # Personal website alexandreargibay.me
 
-> Static website build with Nuxt.js (Vue.js based framework) and hosted on Github Pages.
+> A static website build with Nuxt.js (Vue.js based framework) and hosted on Github Pages
+
 
 This is my personal website, made to better showcase my skills, experience, and future projects.
 
+
 ![demo](https://alexandreargibay.me/page_preview.png)
+
 
 ## Getting Started
 
@@ -12,7 +15,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-This project requires Node.js and NPM(included in the Node.js installation). [Node.js download site](https://nodejs.org/).
+This project requires [Node.js](https://nodejs.org/) and NPM. NPM is included in the newer versions of Node.js.
 
 ### Installation
 
@@ -42,11 +45,14 @@ In order to deploy we just need to have a generated static page and then run the
 # deploy static project to github pages
 $ npm run deploy
 
+# shorthand to generate and deploy at once
+$ npm run generate && npm run deploy
+
 ```
 
 ## Built With
 
-* [Nuxt.js](https://nuxtjs.org/guide) - The web framework used.
+* [Nuxt.js](https://nuxtjs.org/guide) - The framework used.
 * [BEM](https://en.bem.info/methodology/) - The naming convention used.
 * [PostCss](https://github.com/postcss/postcss) - Used to generate CSS vendor prexifes and other css related tweaks.
     * [postcss-css-variables](https://github.com/MadLittleMods/postcss-css-variables) - Used to allow CSS Custom Properties(CSS native variables) to be rendered correctly on older browsers.
