@@ -48,9 +48,6 @@
             </li>
           </ul>
         </div>
-        <div class="photo about-me__media">
-          <img src="/foto_perfil_bn.jpg" alt="Foto de perfil" class="photo__image">
-        </div>
       </div>
     </section>
   </transition>
@@ -88,59 +85,6 @@
     column-count: 2;
     &__item {
       margin-bottom: 1rem;
-    }
-  }
-  &__media {
-    position: relative;
-    display: flex;
-    height: 100%;
-    max-width: 30rem;
-    justify-content: center;
-    margin-top: 4rem;
-    margin-left: auto;
-    margin-right: auto;
-    @media screen and (min-width: $tablet-portrait) {
-      justify-content: left;
-      margin-left: 0;
-      margin-right: 0;
-      @include indent(1, var(--column-count), $tablet-portrait-rem);
-    }
-    @media screen and (min-width: $tablet-landscape) {
-      margin-top: 0;
-      @include indent(1, var(--column-count), $tablet-landscape-rem);
-    }
-    @media screen and (min-width: $laptop) {
-      @include indent(2, var(--column-count), $laptop-rem);
-    }
-    &::before, &::after {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 1;
-    }
-    @supports (mix-blend-mode: lighten) {
-      &::before {
-        background-color: #0b1e63;
-        mix-blend-mode: lighten;
-      }
-    }
-    @supports (mix-blend-mode: darken) {
-      &::after {
-        background-color: #c7ad66;
-        mix-blend-mode: darken;
-      }
-    }
-    .photo {
-      &__image {
-        border-radius: 0.2rem;
-        width: 100%;
-        height: auto;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-      }
     }
   }
 }

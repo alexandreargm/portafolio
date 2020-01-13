@@ -84,10 +84,10 @@ $section-bottom-margin: 12rem;
         @include indent(1, var(--column-count), $mobile-landscape-rem, var(--container-padding));
     }
     @media screen and (min-width: $tablet-portrait) {
-        @include indent(2, var(--column-count), $tablet-portrait-rem, var(--container-padding));
+        @include indent(3, var(--column-count), $tablet-portrait-rem, var(--container-padding));
     }
     @media screen and (min-width: $laptop ) {
-      @include indent(2, var(--column-count), $laptop-rem, var(--container-padding));
+      @include indent(3, var(--column-count), $laptop-rem, var(--container-padding));
       margin-bottom: $section-bottom-margin;
     }
   }
