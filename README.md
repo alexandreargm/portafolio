@@ -21,23 +21,25 @@ This project requires [Node.js](https://nodejs.org/) and NPM. NPM is included in
 
 ``` bash
 # install dependencies
-$ npm run install
+$ npm install
 
 # serve with hot reload at localhost:80
 $ npm run dev
 
-# build for production and launch server
-$ npm run build
-$ npm run start
-
 # generate static project
 $ npm run generate
+
+# build for production and launch server (unused)
+$ npm run build
+$ npm run start
 ```
 
 
 ## Deployment
 
-Deployment to Github Pages is really fast and easy using the [push-dir](https://github.com/L33T-KR3W/push-dir) package. 
+To use this deploy method you will require to have Git installed and a working terminal that has a logged GitHub account.
+
+Deployment to Github Pages is rather easy using the [push-dir](https://github.com/L33T-KR3W/push-dir) package. It allows to easily push the master branch into the gh-pages branch of your project.
 
 In order to deploy we just need to have a generated static page and then run the following command.
 
@@ -50,6 +52,17 @@ $ npm run generate && npm run deploy
 
 ```
 
+This is already set up, but if you are using this method on your own project you will need to add the following script to your "package.json" file. I strongly recommend you to read on how to publish content on GitHub Pages if this is your first time doing it.
+
+```
+...
+"scripts": {
+    ...
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
+  },
+...
+```
+
 ## Built With
 
 * [Nuxt.js](https://nuxtjs.org/guide) - The framework used.
@@ -59,10 +72,6 @@ $ npm run generate && npm run deploy
     * [cssnano](https://cssnano.co/) - Used to minify and reduce the CSS footprint.
 * [v-scroll-lock](https://github.com/phegman/v-scroll-lock) - Small plugin used to create a robust multi-platform supported mobile menu.
 * [sass-loader](https://github.com/webpack-contrib/sass-loader) - Used to enable the use of Sass/SCSS variables on media query breakpoints and other instances for easier code maintenance.
-
-## License
-
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 
 ## Acknowledgments
 
