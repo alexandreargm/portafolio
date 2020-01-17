@@ -9,7 +9,7 @@ export default {
   render: {
     static: {
       setHeaders (res) {
-        res.setHeader('Cache-control', 'max-age=2678400')
+        res.setHeader('Cache-control', 'max-age=31536000')
       }
     }
   },
