@@ -6,7 +6,7 @@
         Experiencia
       </h1>
       <tabs class="experience__tabs">
-        <tab name="Mi ElectroSalomé" :selected="true" class="tabs__tab">
+        <tab :selected="true" name="Mi ElectroSalomé" class="tabs__tab">
           <div class="job tabs__job">
             <div class="job__header">
               <h2 class="job__title text--h2">

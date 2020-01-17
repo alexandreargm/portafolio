@@ -1,37 +1,37 @@
 <!-- Navbar.vue -->
 <template>
   <div
-    class="navbar__wrapper"
     :class="{ 'navbar__wrapper--hidden': !showNavbar, 'navbar__wrapper--reduced': reducedNavbar }"
+    class="navbar__wrapper"
   >
     <nav data-theme="default" class="navbar container">
       <Logo class="logo" />
       <div
-        class="menu__wrapper"
         :class="{ 'menu__wrapper--hidden': !showMobileMenu }"
+        class="menu__wrapper"
       >
         <div
-          class="menu__overlay"
           :class="{ 'menu__overlay--hidden': !showMobileMenu }"
           @click="toggleMobileMenu"
+          class="menu__overlay"
         />
         <ul
           v-scroll-lock="showMobileMenu"
+          :class="{ 'menu--hidden': !showMobileMenu }"
           class="menu"
           data-theme="default"
-          :class="{ 'menu--hidden': !showMobileMenu }"
         >
           <li class="menu__item">
-            <a href="#sobre-mi" class="menu__link text--m" @click="closeMobileMenu(), hideNavbar()">Sobre mi</a>
+            <a @click="closeMobileMenu(), hideNavbar()" href="#sobre-mi" class="menu__link text--m">Sobre mi</a>
           </li>
           <li class="menu__item">
-            <a href="#experiencia" class="menu__link text--m" @click="closeMobileMenu(), hideNavbar()">Experiencia</a>
+            <a @click="closeMobileMenu(), hideNavbar()" href="#experiencia" class="menu__link text--m">Experiencia</a>
           </li>
           <li class="menu__item">
-            <a href="#contacto" class="menu__link text--m" @click="closeMobileMenu(), hideNavbar()">Contacto</a>
+            <a @click="closeMobileMenu(), hideNavbar()" href="#contacto" class="menu__link text--m">Contacto</a>
           </li>
           <li class="menu__item">
-            <a href="/cv.pdf" download="CV Alexandre Argibay.pdf" class="menu__link button text--m" @click="closeMobileMenu(), hideNavbar()">
+            <a @click="closeMobileMenu(), hideNavbar()" href="/cv.pdf" download="CV Alexandre Argibay.pdf" class="menu__link button text--m">
               Descargar CV
             </a>
           </li>
@@ -40,20 +40,20 @@
       <div class="menu-toggle">
         <transition name="menu-toggle">
           <button
-            v-if="showMobileMenu"
             key="open"
-            class="menu-toggle__button"
+            v-if="showMobileMenu"
             @click="toggleMobileMenu"
+            class="menu-toggle__button"
           >
             <svg class="menu-toggle__svg" viewBox="0 0 24 24">
               <path class="menu-toggle__path" d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" />
             </svg>
           </button>
           <button
-            v-else
             key="close"
-            class="menu-toggle__button"
+            v-else
             @click="toggleMobileMenu"
+            class="menu-toggle__button"
           >
             <svg class="menu-toggle__svg" viewBox="0 0 24 24">
               <path class="menu-toggle__path" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
