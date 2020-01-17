@@ -75,6 +75,5 @@ This is already set up, but if you are using this method on your own project you
 
 ## Acknowledgments
 
-* [Anna Kozyreva - Nuxt.js — gh-pages deployment](https://medium.com/@kozyreva.hanna/nuxt-js-gh-pages-deployment-73b88aa3aa65) - How to easily deploy static Nuxt.js sites on Github Pages.
 * [Sebastiano Guerriero - Why we prefer CSS Custom Properties to SASS variables](https://codyhouse.co/blog/post/css-custom-properties-vs-sass-variables) - Benefits of using CSS Custom Properties.
 * [@julienetienne - Pixels Are Dead: Why You Should Stop Using Pixels In CSS](https://medium.com/@julienetienne/pixels-are-dead-faa87cd8c8b9) - Benefits of using rem and em instead of px.
