@@ -31,7 +31,7 @@
             <a href="#contacto" class="menu__link text--m" @click="closeMobileMenu(), hideNavbar()">Contacto</a>
           </li>
           <li class="menu__item">
-            <a href="/cv.pdf" download="CV Alexandre Argibay.pdf" class="menu__download button text--m text--color-primary" @click="closeMobileMenu(), hideNavbar()">
+            <a href="/cv.pdf" download="CV Alexandre Argibay.pdf" class="menu__link button text--m" @click="closeMobileMenu(), hideNavbar()">
               Descargar CV
             </a>
           </li>
@@ -217,8 +217,9 @@ $menu-enter-delay: 1500;
       }
     }
     &__link {
+      color: var(--color-primary);
       &:hover, &:focus, &:active {
-        color: var(--color-primary);
+        color: var(--color-contrast-high);
       }
     }
     .menu__item {

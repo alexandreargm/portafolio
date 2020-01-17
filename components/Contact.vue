@@ -20,12 +20,12 @@
       </div>
       <div class="buttons contact__buttons">
         <div class="buttons__button">
-          <a href="mailto:alexandreargm@gmail.com" role="button" class="button text--m text--color-primary">
+          <a href="mailto:alexandreargm@gmail.com" role="button" class="button text--m">
             Email alexandreargm@gmail.com
           </a>
         </div>
         <div class="buttons__button">
-          <a href="mailto:+34653020231" role="button" class="button text--m text--color-primary">
+          <a href="mailto:+34653020231" role="button" class="button text--m">
             Llamar 653 020 231
           </a>
         </div>
@@ -50,6 +50,12 @@
   .buttons {
     &__button {
       margin-bottom: 2em;
+    }
+    .button {
+      color: var(--color-primary);
+      &:hover, &:focus, &:active {
+        color: var(--color-contrast-high);
+      }
     }
   }
 }
