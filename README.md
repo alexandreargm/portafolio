@@ -10,7 +10,7 @@ This is my personal website, made to better showcase my skills, experience, and 
 
 ## Lighthouse audit score
 
-![demo](https://alexandreargibay.me/lighthouse_score.png)
+![demo](https://alexandreargibay.me/lighthouse_score.PNG)
 
 ## Getting Started
 
