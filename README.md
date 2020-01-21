@@ -40,6 +40,8 @@ $ npm run start
 
 ## Deployment
 
+### Deploying to GitHub Pages
+
 To use this deploy method you will require to have Git installed and a working terminal that has a logged GitHub account.
 
 Deployment to Github Pages is rather easy using the [push-dir](https://github.com/L33T-KR3W/push-dir) package. It allows to easily push the master branch into the gh-pages branch of your project.
@@ -65,6 +67,13 @@ This is already set up, but if you are using this method on your own project you
   },
 ...
 ```
+
+### Custom Domain
+
+If you are not going to use a custom domain delete the "static/CNAME" file in this project. Otherwise edit the file and change my current domain "alexandreargibay.me" to your domain name.
+
+[More information.](https://help.github.com/en/github/working-with-github-pages/configuring-a-custom-domain-for-your-github-pages-site).
+
 
 ## Built With
 
