@@ -72,7 +72,7 @@ This is already set up, but if you are using this method on your own project you
 
 If you are not going to use a custom domain delete the "static/CNAME" file in this project. Otherwise edit the file and change my current domain "alexandreargibay.me" to your domain name.
 
-[More information.](https://help.github.com/en/github/working-with-github-pages/configuring-a-custom-domain-for-your-github-pages-site).
+[More information](https://help.github.com/en/github/working-with-github-pages/configuring-a-custom-domain-for-your-github-pages-site)
 
 
 ## Built With
