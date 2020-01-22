@@ -31,7 +31,7 @@
             <a @click="closeMobileMenu(), hideNavbar()" href="#contacto" class="menu__link text--m">Contacto</a>
           </li>
           <li class="menu__item">
-            <a @click="closeMobileMenu(), hideNavbar()" href="/cv.pdf" download="CV Alexandre Argibay.pdf" class="menu__link button text--m">
+            <a href="/cv.pdf" download="CV Alexandre Argibay.pdf" class="menu__link button text--m">
               Descargar CV
             </a>
           </li>
