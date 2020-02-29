@@ -13,7 +13,7 @@
                 Desarrollo web, Diseño y Marketing <span class="text--color-primary">en Mi ElectroSalomé</span>
               </h2>
               <p class="job__when text--m">
-                Octubre 2018 - agosto 2019, Torrevieja, España
+                Noviembre 2018 - septiembre 2019, Torrevieja, España
               </p>
             </div>
             <ul class="task-list job__task-list">
@@ -36,7 +36,7 @@
                 Desarrollo web y Diseño <span class="text--color-primary">en Intersys IT</span>
               </h2>
               <p class="job__when text--m">
-                Agosto - septiembre 2018, Londres, Reino Unido
+                Octubre 2018, Londres, Reino Unido
               </p>
             </div>
             <ul class="task-list job__task-list">
@@ -54,7 +54,7 @@
                 Desarrollo web y Diseño (prácticas) <span class="text--color-primary">en Intersys IT</span>
               </h2>
               <p class="job__when text--m">
-                Abril - agosto 2018, Londres, Reino Unido
+                Junio - agosto 2018, Londres, Reino Unido
               </p>
             </div>
             <ul class="task-list job__task-list">
