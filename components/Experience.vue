@@ -77,7 +77,7 @@
                 Administrador de sistemas (prácticas) <span class="text--color-primary">en Clínica Virgen del Pilar</span>
               </h2>
               <p class="job__when text--m">
-                Abril 2014 - agosto 2014, Torrevieja, España
+                Abril 2014 - julio 2014, Torrevieja, España
               </p>
             </div>
             <ul class="task-list job__task-list">
