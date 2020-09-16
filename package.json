@@ -16,22 +16,22 @@
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
-    "@nuxtjs/axios": "^5.9.3",
+    "@nuxtjs/axios": "^5.12.2",
     "@nuxtjs/style-resources": "^1.0.0",
-    "nuxt": "^2.11.0"
+    "nuxt": "^2.14.5"
   },
   "devDependencies": {
-    "@nuxtjs/eslint-config": "^1.0.1",
-    "@nuxtjs/eslint-module": "^1.0.0",
-    "babel-eslint": "^10.0.3",
-    "browserslist": "^4.8.3",
+    "@nuxtjs/eslint-config": "^3.1.0",
+    "@nuxtjs/eslint-module": "^1.2.0",
+    "babel-eslint": "^10.1.0",
+    "browserslist": "^4.14.2",
     "eslint": "^6.8.0",
-    "eslint-plugin-nuxt": "^0.5.0",
-    "node-sass": "^4.13.1",
+    "eslint-plugin-nuxt": "^0.5.2",
+    "node-sass": "^4.14.1",
     "postcss-css-variables": "^0.13.0",
-    "postcss-scss": "^2.0.0",
+    "postcss-scss": "^2.1.1",
     "push-dir": "^0.4.1",
     "sass-loader": "^8.0.2",
-    "v-scroll-lock": "^1.1.0"
+    "v-scroll-lock": "^1.3.1"
   }
 }
