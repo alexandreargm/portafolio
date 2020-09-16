@@ -4,7 +4,7 @@
     :class="{ 'navbar__wrapper--hidden': !showNavbar, 'navbar__wrapper--reduced': reducedNavbar }"
     class="navbar__wrapper"
   >
-    <nav data-theme="default" class="navbar container">
+    <nav class="navbar container" data-theme="default">
       <Logo class="logo" />
       <div
         :class="{ 'menu__wrapper--hidden': !showMobileMenu }"
@@ -12,8 +12,8 @@
       >
         <div
           :class="{ 'menu__overlay--hidden': !showMobileMenu }"
-          @click="toggleMobileMenu"
           class="menu__overlay"
+          @click="toggleMobileMenu"
         />
         <ul
           v-scroll-lock="showMobileMenu"
@@ -22,13 +22,13 @@
           data-theme="default"
         >
           <li class="menu__item">
-            <a @click="closeMobileMenu(), hideNavbar()" href="#sobre-mi" class="menu__link text--m">Sobre mi</a>
+            <a href="#sobre-mi" class="menu__link text--m" @click="closeMobileMenu(), hideNavbar()">Sobre mi</a>
           </li>
           <li class="menu__item">
-            <a @click="closeMobileMenu(), hideNavbar()" href="#experiencia" class="menu__link text--m">Experiencia</a>
+            <a href="#experiencia" class="menu__link text--m" @click="closeMobileMenu(), hideNavbar()">Experiencia</a>
           </li>
           <li class="menu__item">
-            <a @click="closeMobileMenu(), hideNavbar()" href="#contacto" class="menu__link text--m">Contacto</a>
+            <a href="#contacto" class="menu__link text--m" @click="closeMobileMenu(), hideNavbar()">Contacto</a>
           </li>
           <li class="menu__item">
             <a href="/cv.pdf" download="CV Alexandre Argibay.pdf" class="menu__link button text--m">
@@ -40,22 +40,22 @@
       <div class="menu-toggle">
         <transition name="menu-toggle">
           <button
-            key="open"
             v-if="showMobileMenu"
-            @click="toggleMobileMenu"
+            key="open"
             class="menu-toggle__button"
             aria-label="open menu"
+            @click="toggleMobileMenu"
           >
             <svg class="menu-toggle__svg" viewBox="0 0 24 24">
               <path class="menu-toggle__path" d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" />
             </svg>
           </button>
           <button
-            key="close"
             v-else
-            @click="toggleMobileMenu"
+            key="close"
             class="menu-toggle__button"
             aria-label="close menu"
+            @click="toggleMobileMenu"
           >
             <svg class="menu-toggle__svg" viewBox="0 0 24 24">
               <path class="menu-toggle__path" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />

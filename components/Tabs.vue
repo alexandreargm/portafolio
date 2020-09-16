@@ -4,7 +4,7 @@
     <div class="menu__wrapper">
       <ul class="menu tabs__menu">
         <li v-for="(tab, idx) in tabs" :key="idx" :class="{ 'is-active': tab.isActive }" class="menu__item text--m">
-          <a :href="tab.href" @click="selectTab(tab)" class="menu__link">{{ tab.name }}</a>
+          <a :href="tab.href" class="menu__link" @click="selectTab(tab)">{{ tab.name }}</a>
         </li>
         <li class="menu__highlight" aria-hidden="true" role="presentation" />
       </ul>

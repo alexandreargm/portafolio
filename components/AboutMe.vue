@@ -13,20 +13,20 @@
         </div>
         <div class="about-me__body">
           <p class="about-me__description text--l">
-            <span class="text--h2">¡Hola!</span> <span class="text--color-contrast-high">Me llamo Alex, soy un Desarrollador Web</span> con estancia <span class="text--color-contrast-high">en Torrevieja, Alicante</span> al que le gusta estar al tanto de las últimas tecnologías de informática y electrónica de consumo.
+            <span class="text--h2">¡Hola!</span> Me llamo Alex, soy un Desarrollador Web al que le gusta estar al tanto de las últimas noticias de la web, informática y electrónica de consumo.
           </p>
           <p class="about-me__description text--l">
-            Me dedico al desarrollo de aplicaciones web modernas, atractivas, y con una experiencia de usuario excelente.
+            Tengo un especial interés por el desarrollo de aplicaciones web modernas y atractivas que ofrecen una experiencia de usuario excelente.
           </p>
           <p class="about-me__description text--l">
-            Estas son algunas de las tecnologías con las que he estado trabajando últimamente:
+            Estas son algunas de las tecnologías con las que he trabajado últimamente:
           </p>
           <ul class="skills-list about-me__skills-list text--m">
             <li class="skills-list__item">
               JavaScript (ES6)
             </li>
             <li class="skills-list__item">
-              HTML y (S)CSS
+              HTML y CSS/SASS
             </li>
             <li class="skills-list__item">
               JQuery

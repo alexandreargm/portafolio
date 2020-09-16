@@ -12,10 +12,10 @@
           ¡Busco trabajo!
         </h2>
         <div class="contact__description text--l">
-          Actualmente estoy en busca de un puesto de trabajo, preferiblemente en Torrevieja, Alicante.
+          Actualmente estoy en busca de un puesto de trabajo, preferiblemente en Alicante.
         </div>
         <p class="contact__description text--l">
-          Si tienes una propuesta de proyecto o quieres comentarme algo, ¡escríbeme! Intentaré responder lo más pronto posible
+          Si tienes una propuesta de proyecto o quieres comentarme algo, ¡escríbeme! Intentaré responder lo más pronto posible.
         </p>
       </div>
       <div class="buttons contact__buttons">
